@@ -23,7 +23,8 @@ const Video3 = () => {
       <Video
         ref={video}
         style={styles.video}
-        source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
+        // source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
+        source={require('../assets/video1.mp4')}
         shouldPlay
         resizeMode='cover'
         isLooping
@@ -58,18 +59,18 @@ const styles = StyleSheet.create({
   },
 
   ButtonContainer: {
-    backgroundColor: "#E53F71",
-    borderRadius: 5,
-    paddingVertical: 20,
-    width:'85%',
     position:'absolute',
-    alignItems:'center',
-    top:'90%',
-    left:'7%'
+    backgroundColor:'#E53F71',
+    bottom:35,
+    width:'90%',
+    alignSelf:'center',
+    padding:25,
+    borderRadius:10,
+    alignItems:"center",
   },
 
   ButtonText: {
-    fontSize: 15,
+    fontSize: 16,
     color: "#fff",
     fontWeight: 500,
     alignSelf: "center",
@@ -79,24 +80,22 @@ const styles = StyleSheet.create({
     color:'white',
     fontSize:30,
     fontWeight:600,
-    textAlign:'left',
-    width:'85%',
+    bottom:150,
+    width:'90%',
+    padding:25,
+    paddingBottom:25,
     position:'absolute',
-    top:'74%',
-    left:'7%'
-  
   },
 
   subText: {
     color:'white',
     fontSize:15,
     fontWeight:300,
-    textAlign:'left',
-    width:'85%',
+    bottom:100,
+    width:'90%',
+    padding:25,
+    paddingBottom:25,
     position:'absolute',
-    lineHeight:20,
-    top:'83%',
-    left:'7%'
   },
 
 })
