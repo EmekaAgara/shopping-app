@@ -1,12 +1,19 @@
-import { StyleSheet, Text, View,Image,TouchableOpacity, ImageBackground } from 'react-native'
+import { StyleSheet, Text, View,Image,TouchableOpacity, ImageBackground, FlatList } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import Video1 from '../components/Video1';
+import products from '../src/data/products'
+import { StatusBar } from 'expo-status-bar'
 
 const SplashScreen = () => {
   return (
     <View style={styles.container}>
-      <Video1/>
+      <FlatList
+        data={products}
+        renderItem={({item}) => (
+          <Image source={{ uri:item.image }} style={styles.image} />
+        )}
+      />
+      {/* <StatusBar style='auto'/> */}
     </View>
   )
 }
@@ -15,10 +22,16 @@ export default SplashScreen
 
 const styles = StyleSheet.create({
   container: {
-    backgroundColor: '#000',
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingBottom:0
+    flex:1,
+    backgroundColor:'000',
+    alignItems:'center',
+    justifyContent:'center'
   },
+
+  image:{
+    width:'100%',
+    aspectRatio:1,
+    // height:'10%'
+  }
 });
   
