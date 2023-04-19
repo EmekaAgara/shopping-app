@@ -4,17 +4,6 @@ import { useNavigation } from '@react-navigation/native'
 import Video1 from '../components/Video1';
 
 const SplashScreen = () => {
-
-    const navigation = useNavigation();
-
-    const onGetStartedPress = () => {
-      navigation.navigate('WalletType');
-    };
-
-    const onNextPress = () => {
-      navigation.navigate('SplashScreen1');
-    };
-
   return (
     <View style={styles.container}>
       <Video1/>

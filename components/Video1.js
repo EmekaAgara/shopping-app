@@ -30,7 +30,7 @@ const Video1 = () => {
         onPlaybackStatusUpdate={setStatus}
       />
 
-      <Text style={styles.mainText}>Refined Shopping experience</Text>
+      <Text style={styles.mainText}>1Refined Shopping experience</Text>
       <Text style={styles.subText}>Refined Shopping experience lorem ipsum lorem ipsum lorem ipsumlorem ipsum</Text>
 
       <TouchableOpacity onPress={onNextPress} style={styles.ButtonContainer}>
