@@ -3,12 +3,14 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import ProductsScreen from './ProductsScreen'
 import ProductDetails from './ProductDetails'
+import ShoppingCart from './ShoppingCart'
 
 const SplashScreen = () => {
   return (
     <View style={styles.container}>
       {/* <ProductsScreen/> */}
-      <ProductDetails/>
+      {/* <ProductDetails/> */}
+      <ShoppingCart/>
 
       {/* <StatusBar style='auto'/> */}
     </View>

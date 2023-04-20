@@ -12,7 +12,7 @@ const ProductDetails = () => {
 
   return (
     <View>
-      
+      <ScrollView>
       <FlatList
         data={product.images}
         renderItem={({item}) => (
@@ -27,7 +27,7 @@ const ProductDetails = () => {
         pagingEnabled
       />
 
-      <ScrollView>
+      
       <View style={{padding:20}}>
         <Text style={styles.title}>{product.name}</Text>
         <Text style={styles.price}>${product.price}</Text>
@@ -65,7 +65,8 @@ const styles = StyleSheet.create({
   button:{
     position:'absolute',
     backgroundColor:'black',
-    bottom:320,
+    // top:'63%',
+    bottom:30,
     width:'90%',
     alignSelf:'center',
     padding:25,

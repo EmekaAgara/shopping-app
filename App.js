@@ -14,17 +14,21 @@ import SplashScreen4 from './screens/SplashScreen4';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import Home from './screens/Home';
+import ShoppingCart from './screens/ShoppingCart';
+import { Provider } from 'react-redux';
+import { store } from './store';
 
 
 export default function App() {
   const Stack = createStackNavigator();
   return (
     
+    <Provider store={store}>
     <NavigationContainer>
       <SafeAreaProvider>
         <Stack.Navigator>
 
-        <Stack.Screen
+        {/* <Stack.Screen
             name='SplashScreen'
             component={SplashScreen}
             options={{
@@ -62,7 +66,7 @@ export default function App() {
             options={{
             headerShown:false,
             }}
-          />
+          /> */}
 
 
           <Stack.Screen
@@ -97,10 +101,20 @@ export default function App() {
             }}
           />
 
+          <Stack.Screen
+            name='ShoppingCart'
+            component={ShoppingCart}
+            options={{
+            headerShown:false,
+            }}
+          />
+
 
         </Stack.Navigator>
       </SafeAreaProvider>
     </NavigationContainer>
+
+    </Provider>
   );
 }
 
