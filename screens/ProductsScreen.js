@@ -1,12 +1,17 @@
 import { StyleSheet, Text, View,Image,TouchableOpacity, ImageBackground, FlatList } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-import products from '../src/data/products'
+// import products from '../src/data/products'
 import { StatusBar } from 'expo-status-bar'
 import { Feather } from '@expo/vector-icons';
+import { useSelector,useDispatch } from 'react-redux';
+import { productsSlice } from '../store/productsSlice';
 
 
 export default function ProductsScreen() {
+  
+  const dispatch = useDispatch();
+  const products = useSelector((state) => state.products.products);
 
   const navigation = useNavigation();
   return (
@@ -21,7 +26,9 @@ export default function ProductsScreen() {
     data={products}
 
     renderItem={({item}) => (
-      <TouchableOpacity onPress={() => navigation.navigate('ProductDetails')} style={styles.itemContainer}>
+      <TouchableOpacity onPress={() => {
+        dispatch(productsSlice.actions.setSelectedProduct(item.id));
+       navigation.navigate('ProductDetails');}} style={styles.itemContainer}>
         <Image source={{ uri:item.image }} style={styles.image} />
       </TouchableOpacity>
     )}

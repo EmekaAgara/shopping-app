@@ -1,9 +1,12 @@
 import { Image, StyleSheet,Text, View,FlatList, useWindowDimensions, Pressable, TouchableOpacity } from "react-native";
 import products from '../src/data/products'
 import { ScrollView } from "react-native-gesture-handler";
+import { useSelector } from "react-redux";
+
+
 
 const ProductDetails = () => {
-  const product = products[0];
+  const product = useSelector((state) => state.products.selectedProduct);
   const {width} = useWindowDimensions();
 
   const addToCart = () => {
