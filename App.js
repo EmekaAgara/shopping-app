@@ -17,7 +17,8 @@ import Home from './screens/Home';
 import ShoppingCart from './screens/ShoppingCart';
 import { Provider } from 'react-redux';
 import { store } from './store';
-
+import ProductDetails from './screens/ProductDetails';
+import ProductsScreen from './screens/ProductsScreen';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -93,9 +94,25 @@ export default function App() {
             }}
           />
 
-          <Stack.Screen
+          {/* <Stack.Screen
             name='Home'
             component={Home}
+            options={{
+            headerShown:false,
+            }}
+          /> */}
+
+          <Stack.Screen
+            name='ProductsScreen'
+            component={ProductsScreen}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+          <Stack.Screen
+            name='ProductDetails'
+            component={ProductDetails}
             options={{
             headerShown:false,
             }}

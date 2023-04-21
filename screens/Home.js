@@ -8,9 +8,9 @@ import ShoppingCart from './ShoppingCart'
 const SplashScreen = () => {
   return (
     <View style={styles.container}>
-      {/* <ProductsScreen/> */}
+      <ProductsScreen/>
       {/* <ProductDetails/> */}
-      <ShoppingCart/>
+      {/* <ShoppingCart/> */}
 
       {/* <StatusBar style='auto'/> */}
     </View>

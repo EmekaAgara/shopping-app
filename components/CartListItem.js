@@ -2,6 +2,7 @@ import { View, Text, StyleSheet, Image } from 'react-native';
 import { Feather } from '@expo/vector-icons';
 import { useDispatch } from 'react-redux';
 import { cartSlice } from '../store/cartSlice';
+import { SafeAreaView } from 'react-native-safe-area-context';
 
 const CartListItem = ({ cartItem }) => {
   const dispatch = useDispatch();
@@ -25,7 +26,7 @@ const CartListItem = ({ cartItem }) => {
   };
 
   return (
-    <View style={styles.container}>
+    <SafeAreaView style={styles.container}>
       <Image source={{ uri: cartItem.product.image }} style={styles.image} />
 
       <View style={styles.contentContainer}>
@@ -51,14 +52,14 @@ const CartListItem = ({ cartItem }) => {
           </Text>
         </View>
       </View>
-    </View>
+    </SafeAreaView>
   );
 };
 
 const styles = StyleSheet.create({
   container: {
     padding: 10,
-    paddingHorizontal: 20,
+    paddingHorizontal: 30,
     flexDirection: 'row',
   },
   contentContainer: {
@@ -66,7 +67,7 @@ const styles = StyleSheet.create({
     marginLeft: 10,
   },
   image: {
-    width: '40%',
+    width: '30%',
     aspectRatio: 1,
   },
   name: {

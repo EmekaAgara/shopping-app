@@ -15,7 +15,7 @@ const Login = () => {
     };
 
     const onLoginPressed = () => {
-      navigation.navigate('Home');
+      navigation.navigate('ProductsScreen');
     };
 
 

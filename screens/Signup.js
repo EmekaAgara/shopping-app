@@ -15,7 +15,7 @@ const Signup = () => {
     };
 
     const onRegisterPressed = () => {
-      navigation.navigate('Home');
+      navigation.navigate('ProductsScreen');
     };
 
     const onOrganizationPressed = () => {
