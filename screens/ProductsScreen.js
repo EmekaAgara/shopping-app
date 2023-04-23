@@ -6,19 +6,20 @@ import { StatusBar } from 'expo-status-bar'
 import { Feather } from '@expo/vector-icons';
 import { useSelector,useDispatch } from 'react-redux';
 import { productsSlice } from '../store/productsSlice';
+import { selectNumberOfItems } from '../store/cartSlice';
 
 
 export default function ProductsScreen() {
   
   const dispatch = useDispatch();
   const products = useSelector((state) => state.products.products);
-
+  const numberOfItems = useSelector(selectNumberOfItems);
   const navigation = useNavigation();
   return (
     <>
     <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('ShoppingCart')}  >
         <Feather name="shopping-cart" size={24} color="black" />
-        <Text style={styles.text}>1</Text>
+        <Text style={styles.text}>{numberOfItems}</Text>
       </TouchableOpacity>
       
     <FlatList

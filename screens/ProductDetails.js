@@ -1,16 +1,18 @@
 import { Image, StyleSheet,Text, View,FlatList, useWindowDimensions, Pressable, TouchableOpacity } from "react-native";
-import products from '../src/data/products'
+// import products from '../src/data/products'
 import { ScrollView } from "react-native-gesture-handler";
-import { useSelector } from "react-redux";
-
+import { useDispatch, useSelector } from "react-redux";
+// import cart from "../src/data/cart";
+import { cartSlice } from "../store/cartSlice";
 
 
 const ProductDetails = () => {
   const product = useSelector((state) => state.products.selectedProduct);
+  const dispatch = useDispatch();
   const {width} = useWindowDimensions();
 
   const addToCart = () => {
-    console.warn('add to cart')
+    dispatch(cartSlice.actions.addCartItem({product}));
   }
 
   return (

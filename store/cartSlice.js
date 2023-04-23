@@ -5,6 +5,7 @@ const initialState = {
   items: [],
   deliveryFee: 15,
   freeDeliveryFrom: 200,
+  
 };
 
 export const cartSlice = createSlice({
@@ -14,7 +15,7 @@ export const cartSlice = createSlice({
     addCartItem: (state, action) => {
       const newProduct = action.payload.product;
       const cartItem = state.items.find(
-        (item) => item.product._id === newProduct._id
+        (item) => item.product.id === newProduct.id
       );
       if (cartItem) {
         cartItem.quantity += 1;
@@ -22,6 +23,8 @@ export const cartSlice = createSlice({
         state.items.push({ product: newProduct, quantity: 1 });
       }
     },
+
+
     changeQuantity: (state, action) => {
       const { productId, amount } = action.payload;
       const cartItem = state.items.find(
