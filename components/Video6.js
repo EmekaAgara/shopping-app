@@ -7,7 +7,6 @@ import { useNavigation } from '@react-navigation/native';
 
 
 const Video6 = () => {
-
   const video = React.useRef(null);
   const secondVideo = React.useRef(null);
   const [status, setStatus] = React.useState({});
