@@ -2,6 +2,8 @@ export default [
   {
     id: "1",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1.png",
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_1.png",
@@ -27,6 +29,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "2",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2.png",
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2_1.png",
@@ -52,6 +56,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "3",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
     ],
@@ -73,6 +79,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "4",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike4.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike4.png",
     ],
@@ -94,6 +102,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "5",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike5.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike5.png",
     ],
@@ -115,6 +125,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "6",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike6.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike6.png",
     ],
@@ -136,6 +148,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "7",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike7.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike7.png",
     ],
@@ -157,6 +171,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "8",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike8.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike8.png",
     ],
@@ -178,6 +194,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
   {
     id: "9",
     image: "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike9.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike9.png",
     ],
@@ -200,6 +218,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     id: "10",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike10.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike10.png",
     ],
@@ -222,6 +242,9 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     id: "11",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike11.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike11.png",
     ],
@@ -244,6 +267,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     id: "12",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike12.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike12.png",
     ],
@@ -266,6 +291,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     id: "13",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike13.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike13.png",
     ],
@@ -288,6 +315,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     id: "14",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike14.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike14.png",
     ],
@@ -310,6 +339,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     id: "15",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike15.png",
+    video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike15.png",
     ],
@@ -332,6 +363,8 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
     id: "16",
     image:
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike16.png",
+      video: "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+      video1: require('../feed/video1.mp4'),
     images: [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike16.png",
     ],
