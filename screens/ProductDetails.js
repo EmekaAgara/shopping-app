@@ -15,6 +15,10 @@ const ProductDetails = () => {
     dispatch(cartSlice.actions.addCartItem({product}));
   }
 
+  const viewAr = () => {
+    dispatch(cartSlice.actions.addCartItem({product}));
+  }
+
   return (
     <View>
       <ScrollView>
@@ -42,10 +46,11 @@ const ProductDetails = () => {
       </ScrollView>
 
       <TouchableOpacity style={styles.sbutton} onPress={addToCart}>
+        
         <Text style={styles.buttonText}>View in AR</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button} onPress={addToCart}>
+      <TouchableOpacity style={styles.button} onPress={viewAr}>
         <Text style={styles.buttonText}>Add to cart</Text>
       </TouchableOpacity>
 
@@ -99,6 +104,7 @@ const styles = StyleSheet.create({
     padding:25,
     borderRadius:10,
     alignItems:"center",
+
   },
 
   buttonText:{
