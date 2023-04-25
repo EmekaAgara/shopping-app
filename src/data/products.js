@@ -12,8 +12,10 @@ export default [
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_4.png",
     ],
     name: "Wild Berry",
+    seller: "@JohnJames",
     price: 160,
     sizes: [39, 40, 41],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -39,8 +41,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2_4.png",
     ],
     name: "Air Force 1",
+    seller: "@JohnJames",
     price: 169,
     sizes: [39, 40, 41, 42, 43],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -62,8 +66,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
     ],
     name: "Nike Cosmic",
+    seller: "@JohnJames",
     price: 129,
     sizes: [38, 39, 40, 41, 42],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -85,8 +91,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike4.png",
     ],
     name: "Retro High",
+    seller: "@JohnJames",
     price: 119,
     sizes: [39, 40, 41, 42, 45],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -108,8 +116,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike5.png",
     ],
     name: "Pegas Turbo",
+    seller: "@JohnJames",
     price: 95,
     sizes: [36, 40, 41, 42, 47],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -131,8 +141,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike6.png",
     ],
     name: "Nike Blazer",
+    seller: "@JohnJames",
     price: 200,
     sizes: [37, 38, 40, 41, 42],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -154,8 +166,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike7.png",
     ],
     name: "Nike Waffle",
+    seller: "@JohnJames",
     price: 154,
     sizes: [39, 40, 41],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -177,8 +191,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike8.png",
     ],
     name: "Nike Reax",
+    seller: "@JohnJames",
     price: 123,
     sizes: [40, 41, 42],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -200,8 +216,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike9.png",
     ],
     name: "Nike Dunk",
+    seller: "@JohnJames",
     price: 119,
     sizes: [40, 41, 42, 43, 44],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
 
 Advantages:
@@ -224,8 +242,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike10.png",
     ],
     name: "Nike Air Penny",
+    seller: "@JohnJames",
     price: 149,
     sizes: [37, 40, 41, 42],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
   
   Advantages:
@@ -249,8 +269,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike11.png",
     ],
     name: "Court Vision",
+    seller: "@JohnJames",
     price: 132,
     sizes: [39, 41, 42],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
   
   Advantages:
@@ -273,8 +295,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike12.png",
     ],
     name: "Nike Immortality",
+    seller: "@JohnJames",
     price: 88,
     sizes: [39, 40, 41, 45],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
     
     Advantages:
@@ -297,8 +321,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike13.png",
     ],
     name: "Nike Aura",
+    seller: "@JohnJames",
     price: 201,
     sizes: [39, 41, 42, 45],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
     
     Advantages:
@@ -321,8 +347,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike14.png",
     ],
     name: "Nike Zoom",
+    seller: "@JohnJames",
     price: 104,
     sizes: [39, 41, 42, 43, 46],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
     
     Advantages:
@@ -345,8 +373,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike15.png",
     ],
     name: "Nike Delta",
+    seller: "@JohnJames",
     price: 128,
     sizes: [39, 41, 42, 46],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
     
     Advantages:
@@ -369,8 +399,10 @@ A timeless rubber sole combines with a soft sockliner and encapsulated Nike Air 
       "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike16.png",
     ],
     name: "Nike React",
+    seller: "@JohnJames",
     price: 157,
     sizes: [39, 41, 43, 45, 46],
+    shortdescription: "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     description: `Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.
     
     Advantages:

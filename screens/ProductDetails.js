@@ -35,10 +35,15 @@ const ProductDetails = () => {
       
       <View style={{padding:20}}>
         <Text style={styles.title}>{product.name}</Text>
+        <Text style={styles.seller}>{product.seller}</Text>
         <Text style={styles.price}>${product.price}</Text>
         <Text style={styles.description}>{product.description}</Text>
       </View>
       </ScrollView>
+
+      <TouchableOpacity style={styles.sbutton} onPress={addToCart}>
+        <Text style={styles.buttonText}>View in AR</Text>
+      </TouchableOpacity>
 
       <TouchableOpacity style={styles.button} onPress={addToCart}>
         <Text style={styles.buttonText}>Add to cart</Text>
@@ -51,13 +56,18 @@ const ProductDetails = () => {
 
 const styles = StyleSheet.create({
   title:{
-    fontSize:34,
+    fontSize:25,
     fontWeight:'500',
     marginVertical:10
   },
   price:{
     fontWeight:'500',
+    fontSize:25,
+  },
+  seller:{
+    fontWeight:'500',
     fontSize:16,
+    paddingBottom:12
   },
   description:{
     marginVertical:10,
@@ -72,6 +82,18 @@ const styles = StyleSheet.create({
     backgroundColor:'black',
     // top:'63%',
     bottom:30,
+    width:'90%',
+    alignSelf:'center',
+    padding:25,
+    borderRadius:10,
+    alignItems:"center",
+  },
+
+  sbutton:{
+    position:'absolute',
+    backgroundColor:'#E53F71',
+    // top:'63%',
+    bottom:110,
     width:'90%',
     alignSelf:'center',
     padding:25,

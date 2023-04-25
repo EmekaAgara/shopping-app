@@ -31,6 +31,8 @@ export default function ProductsScreen() {
     data={products}
 
     renderItem={({item}) => (
+
+      
       <TouchableOpacity onPress={() => {
         dispatch(productsSlice.actions.setSelectedProduct(item.id));
        navigation.navigate('ProductDetails');}} style={styles.itemContainer}>
@@ -38,7 +40,7 @@ export default function ProductsScreen() {
         
         <Video
         ref={video}
-        style={styles.image}
+        style={styles.video}
         // source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
         // source={{uri:item.video}}
         source={item.video1}
@@ -48,6 +50,14 @@ export default function ProductsScreen() {
         onPlaybackStatusUpdate={setStatus}
       />
 
+      <View style={styles.uiContainer}>
+      <Text style={styles.mainText}>{item.name}</Text>
+      <Text style={styles.sellerText}>{item.seller}</Text>
+      <Text style={styles.subText}>{item.shortdescription}</Text>
+      <Text style={styles.priceText}>${item.price}</Text>
+      {/* <Text style={styles.subText}>{item.description}</Text> */}
+
+      </View>
       </TouchableOpacity>
     )}
 
@@ -65,9 +75,57 @@ const styles = StyleSheet.create({
       justifyContent:'center'
     },
 
-    itemContainer: {
+    uiContainer: {
+      display:'flex',
+      justifyContent:'space-between'
+      
       
 
+    },
+
+    mainText: {
+      color:'white',
+      fontSize:27,
+      fontWeight:600,
+      bottom:90,
+      width:'90%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+    },
+
+    sellerText: {
+      color:'white',
+      fontSize:15,
+      fontWeight:600,
+      bottom:65,
+      width:'90%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+    },
+  
+    subText: {
+      color:'white',
+      fontSize:15,
+      fontWeight:300,
+      bottom:20,
+      width:'100%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+    },
+
+    priceText: {
+      color:'white',
+      fontSize:17,
+      fontWeight:500,
+      bottom:100,
+      // width:'90%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+      alignSelf:'flex-end'
     },
 
     icon:{
@@ -90,27 +148,15 @@ const styles = StyleSheet.create({
 
     },
   
-    image:{
-      // width:'100%',
-      // height:100,
+    video:{
       height:Dimensions.get('window').height,
       resizeMode:'contain',
-      // aspectRatio:1,
-      backgroundColor:'#000'
+      backgroundColor:'#000',
     },
 
       
     text:{
       marginLeft:2,
       fontWeight:'400'
-    },
-
-    video:{
-      flex:1,
-      alignSelf:'stretch',
-      top:0,
-      left:0,
-      bottom:0,
-      right:0,
     },
   });
