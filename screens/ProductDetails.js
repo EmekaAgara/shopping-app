@@ -6,13 +6,20 @@ import { useDispatch, useSelector } from "react-redux";
 import { cartSlice } from "../store/cartSlice";
 
 
-const ProductDetails = () => {
+const ProductDetails = ({route}) => {
+  const id = route.params.id;
   const product = useSelector((state) => state.products.selectedProduct);
   const dispatch = useDispatch();
   const {width} = useWindowDimensions();
 
   const addToCart = () => {
     dispatch(cartSlice.actions.addCartItem({product}));
+  }
+
+  console.log(id)
+
+  if(!product){
+    return null;
   }
 
   const viewAr = () => {

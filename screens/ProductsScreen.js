@@ -1,4 +1,4 @@
-import { StyleSheet, Text, View,Image,TouchableOpacity, ImageBackground, FlatList, Dimensions } from 'react-native'
+import { StyleSheet, Text, View,Image,TouchableOpacity, ImageBackground, FlatList, Dimensions, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
 // import products from '../src/data/products'
@@ -8,17 +8,36 @@ import { useSelector,useDispatch } from 'react-redux';
 import { productsSlice } from '../store/productsSlice';
 import { selectNumberOfItems } from '../store/cartSlice';
 import { Video } from 'expo-av';
+import { useGetProductsQuery } from '../store/apiSlice';
+
 
 export default function ProductsScreen() {
   
   const dispatch = useDispatch();
-  const products = useSelector((state) => state.products.products);
+  // const products = useSelector((state) => state.products.products);
+  const {data, isLoading, error} = useGetProductsQuery();
   const numberOfItems = useSelector(selectNumberOfItems);
   const video = React.useRef(null);
   const secondVideo = React.useRef(null);
   const [status, setStatus] = React.useState({});
   const [statusSecondVideo, setStatusSecondVideo] = React.useState({});
   const navigation = useNavigation();
+
+  if(isLoading){
+    return <ActivityIndicator color="#3B71F3" size="small" style={styles.indicator}/>
+
+  }
+
+  if(error){
+    console.log(error)
+    return<Text>Error Fetching Products:{error.error}</Text>
+  }
+
+  console.log(data)
+
+  const products = data.data;
+
+
   return (
     <>
     <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('ShoppingCart')}  >
@@ -34,8 +53,8 @@ export default function ProductsScreen() {
 
       
       <TouchableOpacity onPress={() => {
-        dispatch(productsSlice.actions.setSelectedProduct(item.id));
-       navigation.navigate('ProductDetails');}} style={styles.itemContainer}>
+        // dispatch(productsSlice.actions.setSelectedProduct(item.id));
+       navigation.navigate('ProductDetails',  {id:item._id});}} style={styles.itemContainer}>
         {/* <Image source={{ uri:item.image }} style={styles.image} /> */}
         
         <Video
@@ -159,4 +178,9 @@ const styles = StyleSheet.create({
       marginLeft:2,
       fontWeight:'400'
     },
+
+    indicator: {
+      flex: 1,
+      
+    }
   });
