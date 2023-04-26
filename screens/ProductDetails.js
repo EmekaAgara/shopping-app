@@ -1,26 +1,36 @@
-import { Image, StyleSheet,Text, View,FlatList, useWindowDimensions, Pressable, TouchableOpacity } from "react-native";
+import { Image, StyleSheet,Text, View,FlatList, useWindowDimensions, Pressable, TouchableOpacity, ActivityIndicator } from "react-native";
 // import products from '../src/data/products'
 import { ScrollView } from "react-native-gesture-handler";
 import { useDispatch, useSelector } from "react-redux";
 // import cart from "../src/data/cart";
 import { cartSlice } from "../store/cartSlice";
+import { useGetProductQuery } from "../store/apiSlice";
 
 
 const ProductDetails = ({route}) => {
   const id = route.params.id;
-  const product = useSelector((state) => state.products.selectedProduct);
+  const {data, isLoading, error} = useGetProductQuery(id);
+  // const product = useSelector((state) => state.products.selectedProduct);
   const dispatch = useDispatch();
-  const {width} = useWindowDimensions();
+  const {width} = useWindowDimensions(id);
 
   const addToCart = () => {
     dispatch(cartSlice.actions.addCartItem({product}));
   }
 
-  console.log(id)
+  if(isLoading){
+    return <ActivityIndicator color="#3B71F3" size="small" style={styles.indicator}/>
 
-  if(!product){
-    return null;
   }
+
+  if(error){
+    console.log(error)
+    return<Text>Error Fetching Products:{error.error}</Text>
+  }
+
+  const product = data.data;
+
+
 
   const viewAr = () => {
     dispatch(cartSlice.actions.addCartItem({product}));
@@ -28,7 +38,7 @@ const ProductDetails = ({route}) => {
 
   return (
     <View>
-      <ScrollView>
+      <ScrollView showsVerticalScrollIndicator={false}>
       <FlatList
         data={product.images}
         renderItem={({item}) => (
@@ -118,7 +128,13 @@ const styles = StyleSheet.create({
     color:'white',
     fontWeight:'500',
     fontSize:16,
+  },
+
+  indicator: {
+    flex: 1,
+    
   }
+
 });
 
 export default ProductDetails;
