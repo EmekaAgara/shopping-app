@@ -2,8 +2,8 @@ import { View, Text,StyleSheet, TouchableOpacity, Alert, ActivityIndicator } fro
 import React from 'react'
 import { FlatList } from 'react-native-gesture-handler'
 import CartListItem from '../components/CartListItem'
-import { useSelector } from 'react-redux'
-import { selectDeliveryPrice, selectSubtotal, selectTotal } from '../store/cartSlice'
+import { useDispatch, useSelector } from 'react-redux'
+import { selectDeliveryPrice, selectSubtotal, selectTotal, cartSlice } from '../store/cartSlice'
 import { useCreateOrderMutation } from '../store/apiSlice'
 
 
@@ -36,11 +36,12 @@ const ShoppingCart = () => {
     const subtotal = useSelector(selectSubtotal);
     const deliveryFee = useSelector(selectDeliveryPrice);
     const total = useSelector(selectTotal);
+    const dispatch = useDispatch();
 
     const cartItems = useSelector((state) => state.cart.items);
-    const  [createOrder, {data, error, isLoading}] = useCreateOrderMutation();
+    const [createOrder, {data, error, isLoading}] = useCreateOrderMutation();
 
-    console.log(error, isLoading);
+    console.log(data,error, isLoading);
 
 
 
@@ -56,12 +57,15 @@ const ShoppingCart = () => {
                 email:'customer email'
             },
         });
+        
 
-        if(result.data?.status === 'OK'){
+        if(result.data?.status === 'ok'){
             Alert.alert(
-                'Order has been submitted',
+                'Your Order has been created',
                 `Your order reference is: ${result.data.data.ref}`
             );
+            dispatch(cartSlice.actions.clear());
+            
         }
     };
 
