@@ -1,9 +1,11 @@
-import { View, Text,StyleSheet, TouchableOpacity } from 'react-native'
+import { View, Text,StyleSheet, TouchableOpacity, Alert, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { FlatList } from 'react-native-gesture-handler'
 import CartListItem from '../components/CartListItem'
 import { useSelector } from 'react-redux'
 import { selectDeliveryPrice, selectSubtotal, selectTotal } from '../store/cartSlice'
+import { useCreateOrderMutation } from '../store/apiSlice'
+
 
 const ShoppingCartTotals = ()=> {
     const subtotal = useSelector(selectSubtotal);
@@ -31,11 +33,37 @@ const ShoppingCartTotals = ()=> {
 
 
 const ShoppingCart = () => {
+    const subtotal = useSelector(selectSubtotal);
+    const deliveryFee = useSelector(selectDeliveryPrice);
+    const total = useSelector(selectTotal);
 
     const cartItems = useSelector((state) => state.cart.items);
-    const checkout = () => {
-        console.warn('add to cart')
-    }
+    const  [createOrder, {data, error, isLoading}] = useCreateOrderMutation();
+
+    console.log(error, isLoading);
+
+
+
+    const OnCreateOrder = async () => {
+        const result = await createOrder({
+            items:cartItems,
+            subtotal,
+            deliveryFee,
+            total,
+            customer:{
+                name:'customer name',
+                address:'customer address',
+                email:'customer email'
+            },
+        });
+
+        if(result.data?.status === 'OK'){
+            Alert.alert(
+                'Order has been submitted',
+                `Your order reference is: ${result.data.data.ref}`
+            );
+        }
+    };
 
   return (
     <>
@@ -44,8 +72,12 @@ const ShoppingCart = () => {
         renderItem={({item}) => <CartListItem cartItem={item}/>}
         ListFooterComponent={ShoppingCartTotals}
     />
-        <TouchableOpacity style={styles.button} onPress={checkout}>
-            <Text style={styles.buttonText}>Checkout</Text>
+        <TouchableOpacity style={styles.button} onPress={OnCreateOrder}>
+            <Text style={styles.buttonText}>
+                Checkout
+                {isLoading  && <ActivityIndicator/>}
+            
+            </Text>
         </TouchableOpacity>
 
     </>
