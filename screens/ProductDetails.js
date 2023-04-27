@@ -25,7 +25,7 @@ const ProductDetails = ({route}) => {
 
   if(error){
     console.log(error)
-    return<Text>Error Fetching Products:{error.error}</Text>
+    return<Text>Error Fetching Product:{error.error}</Text>
   }
 
   const product = data.data;

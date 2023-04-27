@@ -33,8 +33,6 @@ export default function ProductsScreen() {
     return<Text>Error Fetching Products:{error.error}</Text>
   }
 
-  console.log(data)
-
   const products = data.data;
 
 

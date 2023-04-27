@@ -2,14 +2,21 @@ const {MongoClient} = require('mongodb');
 
 const uri ='mongodb+srv://emekaagara:08095011929@cluster0.19oyrox.mongodb.net/?retryWrites=true&w=majority';
 
-const client = new MongoClient(uri);
+let client;
 
-const database = client.db('test');
-const products = database.collection('products');
-const orders = database.collection('orders');
+const getDB = () => {
 
+    if (!client){
+        client = new MongoClient(uri);
+    }
+    const database = client.db('test');
+    const products = database.collection('products');
+    const orders = database.collection('orders');
 
-module.exports = {
-    products,
-    orders,
-}
+    return{
+        products,
+        orders,
+    };
+};
+
+module.exports = getDB

@@ -5,7 +5,7 @@ const router = express.Router();
 
 router.get('/', async (req, res) => {
     const products = await getAllProducts();
-    console.log(products);
+    // console.log(products);
     res.send({status:'OK', data:products});
 });
 
