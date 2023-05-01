@@ -30,7 +30,10 @@ const client = new Client({
               }
               
             });
-            res.json(response.result.paymentLink.url)
+            
+            res.json({response:response.result.paymentLink.url})
+
+            // res.json(response.result.paymentLink.url)
             console.log(response.result);
           } catch(error) {
             console.log(error);
