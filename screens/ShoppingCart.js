@@ -4,8 +4,7 @@ import { FlatList } from 'react-native-gesture-handler'
 import CartListItem from '../components/CartListItem'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectDeliveryPrice, selectSubtotal, selectTotal, cartSlice } from '../store/cartSlice'
-import { useCreateOrderMutation } from '../store/apiSlice'
-
+import { useCreateOrderMutation, useCreatePaymentIntentMutation } from '../store/apiSlice'
 
 const ShoppingCartTotals = ()=> {
     const subtotal = useSelector(selectSubtotal);
@@ -36,16 +35,22 @@ const ShoppingCart = () => {
     const subtotal = useSelector(selectSubtotal);
     const deliveryFee = useSelector(selectDeliveryPrice);
     const total = useSelector(selectTotal);
+    // const items = useSelector(cartItems);
     const dispatch = useDispatch();
 
     const cartItems = useSelector((state) => state.cart.items);
     const [createOrder, {data, error, isLoading}] = useCreateOrderMutation();
+    const [useCreatePaymentIntent] = useCreatePaymentIntentMutation();
 
-    console.log(data,error, isLoading);
+    const onCheckout = async () => {
+        // 1. Create a payment intent
+        const response = await useCreatePaymentIntent({amount: Math.floor(total * 100)})
+        console.log(response);
+        onCreateOrder();
+    };
 
 
-
-    const OnCreateOrder = async () => {
+    const onCreateOrder = async () => {
         const result = await createOrder({
             items:cartItems,
             subtotal,
@@ -76,7 +81,7 @@ const ShoppingCart = () => {
         renderItem={({item}) => <CartListItem cartItem={item}/>}
         ListFooterComponent={ShoppingCartTotals}
     />
-        <TouchableOpacity style={styles.button} onPress={OnCreateOrder}>
+        <TouchableOpacity style={styles.button} onPress={onCheckout}>
             <Text style={styles.buttonText}>
                 Checkout
                 {isLoading  && <ActivityIndicator/>}
