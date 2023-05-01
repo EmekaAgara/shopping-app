@@ -12,7 +12,8 @@ const PORT = 3000;
 app.use(bodyParser.json());
 app.use('/products', productRoutes);
 app.use('/orders', orderRoutes);
-app.use('/payments', paymentRoutes);
+// app.use('/payments', paymentRoutes);
+app.use('/v2/online-checkout/payment-links', paymentRoutes);
 
 app.get('/', (req, res) => {
     res.send('<h2>Hello world</h2>');

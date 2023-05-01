@@ -19,6 +19,7 @@ import { Provider } from 'react-redux';
 import { store } from './store';
 import ProductDetails from './screens/ProductDetails';
 import ProductsScreen from './screens/ProductsScreen';
+import Pay from './screens/Pay';
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -121,6 +122,14 @@ export default function App() {
           <Stack.Screen
             name='ShoppingCart'
             component={ShoppingCart}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+          <Stack.Screen
+            name='Pay'
+            component={Pay}
             options={{
             headerShown:false,
             }}
