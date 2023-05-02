@@ -1,19 +1,18 @@
-import { useRoute } from '@react-navigation/native';
-import React, { PureComponent } from 'react'
+import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 import { SafeAreaView } from "react-native";
 import { WebView } from 'react-native-webview';
 
 const Pay = ({route}) => {
-  // const paramKey = route.params.paramKey;
   return (
+    
     <SafeAreaView
       style={styles.safeArea}>
-      <Text style={{fontSize:40}}>{route.params.data}</Text>
       <WebView 
+        startInLoadingState={true}
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
-        source={{ uri: 'https://checkout.square.site/preview#order=eyJpZCI6ImhJQVVuZmtjdWMwMlBESk8wNHJhUEg1OXdhTFpZIiwibG9jYXRpb25faWQiOiJMMVhaQzhSRkNWSlJZIiwiY3JlYXRvcl9hcHBfaWQiOiJzYW5kYm94LXNxMGlkYi1aSHkwb2lNSkhiZnZJQnl0bWRlcUp3Iiwic291cmNlIjp7Im5hbWUiOiJTYW5kYm94IGZvciBzcTBpZHAtT3dyVnZvVTR1aS1iSkdzVERacmVLQSIsImFwcGxpY2F0aW9uX25hbWUiOiJTYW5kYm94IGZvciBzcTBpZHAtT3dyVnZvVTR1aS1iSkdzVERacmVLQSIsImFwcGxpY2F0aW9uX2lkIjoic2FuZGJveC1zcTBpZGItWkh5MG9pTUpIYmZ2SUJ5dG1kZXFKdyIsImNsaWVudF9vdSI6Im9ubGluZS1jaGVja291dCJ9LCJuYW1lIjoiUHJvZHVjdCBOYW1lIiwibWVyY2hhbnRfaWQiOiJNTDFXRkZYWkE5UUhHIiwibGluZV9pdGVtcyI6W3sidWlkIjoiMlhwSkxtQzhVaWV4M2xqRnBjOER0QyIsIm5hbWUiOiJQcm9kdWN0IE5hbWUiLCJxdWFudGl0eSI6IjEiLCJpdGVtX3R5cGUiOiJJVEVNIiwiYmFzZV9wcmljZV9tb25leSI6eyJhbW91bnQiOjE1MDAsImN1cnJlbmN5IjoiVVNEIn0sInZhcmlhdGlvbl90b3RhbF9wcmljZV9tb25leSI6eyJhbW91bnQiOjE1MDAsImN1cnJlbmN5IjoiVVNEIn0sImdyb3NzX3NhbGVzX21vbmV5Ijp7ImFtb3VudCI6MTUwMCwiY3VycmVuY3kiOiJVU0QifSwidG90YWxfdGF4X21vbmV5Ijp7ImFtb3VudCI6MCwiY3VycmVuY3kiOiJVU0QifSwidG90YWxfZGlzY291bnRfbW9uZXkiOnsiYW1vdW50IjowLCJjdXJyZW5jeSI6IlVTRCJ9LCJ0b3RhbF9tb25leSI6eyJhbW91bnQiOjE1MDAsImN1cnJlbmN5IjoiVVNEIn0sInRvdGFsX3NlcnZpY2VfY2hhcmdlX21vbmV5Ijp7ImFtb3VudCI6MCwiY3VycmVuY3kiOiJVU0QifX1dLCJmdWxmaWxsbWVudHMiOlt7InVpZCI6ImdKZHA2NkV1VWlWamFVdHlMMndnSEIiLCJ0eXBlIjoiU0hJUE1FTlQiLCJzdGF0ZSI6IlBST1BPU0VEIiwic2hpcG1lbnRfZGV0YWlscyI6eyJyZWNpcGllbnQiOnsiZGlzcGxheV9uYW1lIjoiICIsImVtYWlsX2FkZHJlc3MiOiIifX0sImNyZWF0ZWRfYXQiOiIyMDIzLTA1LTAyVDExOjA1OjQ2LjI2NFoifV0sIm5ldF9hbW91bnRzIjp7InRvdGFsX21vbmV5Ijp7ImFtb3VudCI6MTUwMCwiY3VycmVuY3kiOiJVU0QifSwidGF4X21vbmV5Ijp7ImFtb3VudCI6MCwiY3VycmVuY3kiOiJVU0QifSwiZGlzY291bnRfbW9uZXkiOnsiYW1vdW50IjowLCJjdXJyZW5jeSI6IlVTRCJ9LCJ0aXBfbW9uZXkiOnsiYW1vdW50IjowLCJjdXJyZW5jeSI6IlVTRCJ9LCJzZXJ2aWNlX2NoYXJnZV9tb25leSI6eyJhbW91bnQiOjAsImN1cnJlbmN5IjoiVVNEIn19LCJtZXRhZGF0YSI6eyJzcXVhcmU6YXNrX2Zvcl9zaGlwcGluZyI6InRydWUiLCJzcXVhcmU6dGlwcGluZ19lbmFibGVkIjoidHJ1ZSJ9LCJjcmVhdGVkX2F0IjoiMjAyMy0wNS0wMlQxMTowNTo0Ni4yNzRaIiwidXBkYXRlZF9hdCI6IjIwMjMtMDUtMDJUMTE6MDU6NDYuMjc0WiIsInN0YXRlIjoiRFJBRlQiLCJ2ZXJzaW9uIjoxLCJ0b3RhbF9tb25leSI6eyJhbW91bnQiOjE1MDAsImN1cnJlbmN5IjoiVVNEIn0sInRvdGFsX3RheF9tb25leSI6eyJhbW91bnQiOjAsImN1cnJlbmN5IjoiVVNEIn0sInRvdGFsX2Rpc2NvdW50X21vbmV5Ijp7ImFtb3VudCI6MCwiY3VycmVuY3kiOiJVU0QifSwidG90YWxfdGlwX21vbmV5Ijp7ImFtb3VudCI6MCwiY3VycmVuY3kiOiJVU0QifSwidG90YWxfc2VydmljZV9jaGFyZ2VfbW9uZXkiOnsiYW1vdW50IjowLCJjdXJyZW5jeSI6IlVTRCJ9LCJuZXRfYW1vdW50X2R1ZV9tb25leSI6eyJhbW91bnQiOjE1MDAsImN1cnJlbmN5IjoiVVNEIn0sInByb2Nlc3NpbmdfbW9kZXMiOnsiY3JlYXRpb25fcHJvY2Vzc2luZ19tb2RlIjoiT05MSU5FIn19' }}
+        source={{ uri:route.params.paramKey}}
         javaScriptEnabled={true}
         domStorageEnabled={true}
       />
@@ -29,8 +28,6 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#fff',
     maxWidth:'100%',
-    // max-width: '100%',
-    // overflow-x: hidden,
   }
 })
 

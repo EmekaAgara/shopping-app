@@ -1,4 +1,4 @@
-import { View, Text,StyleSheet, TouchableOpacity, Alert, ActivityIndicator } from 'react-native'
+import { View, Text,StyleSheet, TouchableOpacity, Alert, ActivityIndicator, Linking } from 'react-native'
 import React from 'react'
 import { FlatList } from 'react-native-gesture-handler'
 import CartListItem from '../components/CartListItem'
@@ -6,8 +6,8 @@ import { useDispatch, useSelector } from 'react-redux'
 import { selectDeliveryPrice, selectSubtotal, selectTotal, cartSlice } from '../store/cartSlice'
 import { useCreateOrderMutation, useCreatePaymentIntentMutation } from '../store/apiSlice'
 import { selectedProduct } from '../store/productsSlice'
-import { useNavigation } from '@react-navigation/native'
-
+import { useLinkTo, useNavigation } from '@react-navigation/native'
+import Dialog from "react-native-dialog";
 
 
 const ShoppingCartTotals = ()=> {
@@ -47,8 +47,8 @@ const Cart = () => {
     const [useCreatePaymentIntent] = useCreatePaymentIntentMutation();
 
     const pay = () => {
-        navigation.navigate('Pay');
-        };
+        navigation.navigate('Pay', {paramKey:response});
+    };
 
     const onCheckout = async () => {
         // 1. Create a payment intent
@@ -60,18 +60,23 @@ const Cart = () => {
         }
         console.log(response);
 
+        
+
         if(response.data){
-            Alert.alert(
-                // 'Your Order has been created',
-                // `Your order reference is: ${result.data.data.ref}`
-                `Your order link is: ${response.data.response}`
-            );
-            // dispatch(cartSlice.actions.clear());
+
+            Alert.alert('Continue to Checkout', `Order Link: ${response.data.response}`, [
+                {
+                  text: 'Cancel',
+                  onPress: () => console.log('Cancel Pressed'),
+                  style: 'cancel',
+                },
+                // {text: 'Continue', onPress: () => pay()},
+                {text: 'Continue', onPress: () => navigation.navigate('Pay', {paramKey:response.data.response})},
+            ]);
+        
             
         }
-
-
-        onCreateOrder();
+        // onCreateOrder();
         // pay();
     };
 
