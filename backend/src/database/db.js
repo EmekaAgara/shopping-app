@@ -1,6 +1,8 @@
 const {MongoClient} = require('mongodb');
+require('dotenv').config();
 
-const uri ='mongodb+srv://emekaagara:08095011929@cluster0.19oyrox.mongodb.net/?retryWrites=true&w=majority';
+// const uri ='mongodb+srv://emekaagara:08095011929@cluster0.19oyrox.mongodb.net/?retryWrites=true&w=majority';
+const uri =process.env.MONGO_DB_URI;
 
 let client;
 

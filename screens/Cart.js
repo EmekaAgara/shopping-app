@@ -76,8 +76,7 @@ const Cart = () => {
         
             
         }
-        // onCreateOrder();
-        // pay();
+        onCreateOrder();
     };
 
 
