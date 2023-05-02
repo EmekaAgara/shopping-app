@@ -5,6 +5,10 @@ import CartListItem from '../components/CartListItem'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectDeliveryPrice, selectSubtotal, selectTotal, cartSlice } from '../store/cartSlice'
 import { useCreateOrderMutation, useCreatePaymentIntentMutation } from '../store/apiSlice'
+import { selectedProduct } from '../store/productsSlice'
+import { useNavigation } from '@react-navigation/native'
+
+
 
 const ShoppingCartTotals = ()=> {
     const subtotal = useSelector(selectSubtotal);
@@ -30,23 +34,45 @@ const ShoppingCartTotals = ()=> {
 )
     }
 
-
-const ShoppingCart = () => {
+const Cart = () => {
+    const navigation = useNavigation();
     const subtotal = useSelector(selectSubtotal);
     const deliveryFee = useSelector(selectDeliveryPrice);
     const total = useSelector(selectTotal);
-    // const items = useSelector(cartItems);
+    // const products = useSelector(selectedProduct);
     const dispatch = useDispatch();
 
     const cartItems = useSelector((state) => state.cart.items);
     const [createOrder, {data, error, isLoading}] = useCreateOrderMutation();
     const [useCreatePaymentIntent] = useCreatePaymentIntentMutation();
 
+    const pay = () => {
+        navigation.navigate('Pay');
+        };
+
     const onCheckout = async () => {
         // 1. Create a payment intent
         const response = await useCreatePaymentIntent({amount: Math.floor(total * 100)})
+
+        if(response.error) {
+            Alert.alert('Something went wrong');
+            return;
+        }
         console.log(response);
+
+        if(response.data){
+            Alert.alert(
+                // 'Your Order has been created',
+                // `Your order reference is: ${result.data.data.ref}`
+                `Your order link is: ${response.data.response}`
+            );
+            // dispatch(cartSlice.actions.clear());
+            
+        }
+
+
         onCreateOrder();
+        // pay();
     };
 
 
@@ -139,4 +165,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default ShoppingCart
+export default Cart

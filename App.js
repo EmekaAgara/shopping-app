@@ -14,7 +14,7 @@ import SplashScreen4 from './screens/SplashScreen4';
 import Login from './screens/Login';
 import Signup from './screens/Signup';
 import Home from './screens/Home';
-import ShoppingCart from './screens/ShoppingCart';
+import Cart from './screens/Cart';
 import { Provider } from 'react-redux';
 import { store } from './store';
 import ProductDetails from './screens/ProductDetails';
@@ -120,8 +120,8 @@ export default function App() {
           />
 
           <Stack.Screen
-            name='ShoppingCart'
-            component={ShoppingCart}
+            name='Cart'
+            component={Cart}
             options={{
             headerShown:false,
             }}
@@ -131,11 +131,11 @@ export default function App() {
             name='Pay'
             component={Pay}
             options={{
-            headerShown:false,
+            headerShown:true,
+            presentation:'modal'
+            
             }}
           />
-
-
         </Stack.Navigator>
       </SafeAreaProvider>
     </NavigationContainer>

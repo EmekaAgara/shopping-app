@@ -3,7 +3,7 @@ import React from 'react'
 import { StatusBar } from 'expo-status-bar'
 import ProductsScreen from './ProductsScreen'
 import ProductDetails from './ProductDetails'
-import ShoppingCart from './ShoppingCart'
+import ShoppingCart from './Cart'
 
 const SplashScreen = () => {
   return (

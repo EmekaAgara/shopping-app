@@ -38,7 +38,7 @@ export default function ProductsScreen() {
 
   return (
     <>
-    <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('ShoppingCart')}  >
+    <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('Cart')}  >
         <Feather name="shopping-cart" size={24} color="black" />
         <Text style={styles.text}>{numberOfItems}</Text>
       </TouchableOpacity>
