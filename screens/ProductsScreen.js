@@ -60,12 +60,14 @@ export default function ProductsScreen() {
         style={styles.video}
         // source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
         // source={{uri:item.video}}
-        source={item.video1}
+        source={{uri:item.video}}
         shouldPlay
         resizeMode='cover'
         isLooping
         onPlaybackStatusUpdate={setStatus}
       />
+
+
 
       <View style={styles.uiContainer}>
       <Text style={styles.mainText}>{item.name}</Text>
@@ -169,9 +171,7 @@ const styles = StyleSheet.create({
       height:Dimensions.get('window').height,
       resizeMode:'contain',
       backgroundColor:'#000',
-    },
-
-      
+    },      
     text:{
       marginLeft:2,
       fontWeight:'400'
