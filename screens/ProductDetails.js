@@ -5,7 +5,7 @@ import { useDispatch, useSelector } from "react-redux";
 // import cart from "../src/data/cart";
 import { cartSlice } from "../store/cartSlice";
 import { useGetProductQuery } from "../store/apiSlice";
-
+import { useNavigation } from "@react-navigation/native";
 
 const ProductDetails = ({route}) => {
   const id = route.params.id;
@@ -13,8 +13,10 @@ const ProductDetails = ({route}) => {
   // const product = useSelector((state) => state.products.selectedProduct);
   const dispatch = useDispatch();
   const {width} = useWindowDimensions(id);
+  const navigation = useNavigation();
 
   const addToCart = () => {
+    navigation.navigate('ProductsScreen');
     dispatch(cartSlice.actions.addCartItem({product}));
   }
 
@@ -62,12 +64,12 @@ const ProductDetails = ({route}) => {
       </View>
       </ScrollView>
 
-      <TouchableOpacity style={styles.sbutton} onPress={addToCart}>
+      <TouchableOpacity style={styles.sbutton} onPress={viewAr}>
         
         <Text style={styles.buttonText}>View in AR</Text>
       </TouchableOpacity>
 
-      <TouchableOpacity style={styles.button} onPress={viewAr}>
+      <TouchableOpacity style={styles.button} onPress={addToCart}>
         <Text style={styles.buttonText}>Add to cart</Text>
       </TouchableOpacity>
 

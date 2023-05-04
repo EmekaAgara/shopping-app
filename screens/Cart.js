@@ -95,10 +95,10 @@ const Cart = () => {
         
 
         if(result.data?.status === 'ok'){
-            Alert.alert(
-                'Your Order has been created',
-                `Your order reference is: ${result.data.data.ref}`
-            );
+            // Alert.alert(
+            //     'Your Order has been created',
+            //     `Your order reference is: ${result.data.data.ref}`
+            // );
             dispatch(cartSlice.actions.clear());
             
         }

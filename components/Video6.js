@@ -22,8 +22,8 @@ const Video6 = () => {
       <Video
         ref={video}
         style={styles.video}
-        // source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
-        source={require('../assets/video1.mp4')}
+        source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
+        // source={require('../assets/video1.mp4')}
         shouldPlay
         resizeMode='cover'
         isLooping
