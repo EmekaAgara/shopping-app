@@ -31,7 +31,7 @@ const CartListItem = ({ cartItem }) => {
 
       <View style={styles.contentContainer}>
         <Text style={styles.name}>{cartItem.product.name}</Text>
-        <Text style={styles.size}>Size {cartItem.size}</Text>
+        <Text style={styles.size}>Size{cartItem.size}</Text>
 
         <View style={styles.footer}>
           <Feather

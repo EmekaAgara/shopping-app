@@ -23,16 +23,16 @@ const Video4 = () => {
       <Video
         ref={video}
         style={styles.video}
-        source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
-        // source={require('../assets/video1.mp4')}
+        // source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
+        source={require('../assets/influencer.mp4')}
         shouldPlay
         resizeMode='cover'
         isLooping
         onPlaybackStatusUpdate={setStatus}
       />
 
-      <Text style={styles.mainText}>4Refined Shopping experience</Text>
-      <Text style={styles.subText}>Refined Shopping experience lorem ipsum lorem ipsum lorem ipsumlorem ipsum</Text>
+      <Text style={styles.mainText}>Partner with Influencers</Text>
+      <Text style={styles.subText}>Partner with influencers to increase brand awareness, and drive sales.</Text>
 
       <TouchableOpacity onPress={onNextPress} style={styles.ButtonContainer}>
         <Text style={styles.ButtonText}>Next</Text>
