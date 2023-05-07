@@ -43,7 +43,7 @@ export default Login
 const styles = StyleSheet.create({
 
   container: {
-    backgroundColor:'brown'
+    backgroundColor:'#011'
   },
 
 
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     alignItems:'center',
     padding:20,
     paddingTop:'40%',
-    backgroundColor:'brown',
+    backgroundColor:'#1211',
     height:'100%',
   },
 
@@ -67,7 +67,7 @@ const styles = StyleSheet.create({
   title:{
     fontSize:24,
     fontWeight:'bold',
-    color:'black',
+    color:'white',
     margin:10,
     alignSelf:'flex-start',
   },

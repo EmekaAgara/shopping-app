@@ -30,7 +30,7 @@ const Signup = () => {
   return (
 
 
-    <SafeAreaView>
+    <SafeAreaView style={styles.container}>
       <View style={styles.root}>
         <Image
           source={require('../assets/XRP.png')}
@@ -43,7 +43,7 @@ const Signup = () => {
         <CustomInput name="password" placeholder="Password" secureTextEntry rules={{required:'Enter your password',}} />
         <CustomInput name="password-repeat" placeholder="Confirm Password" secureTextEntry rules={{validate: value => value === pwd || 'Passwords do not match',}} />
         <CustomButton text="Create Account" onPress={onRegisterPressed}/>
-        <Text style={styles.text}>To signup as an organization{' '}<Text style={styles.link} onPress={onOrganizationPressed}>Click Here</Text> <Text style={styles.link} onPress={onPrivacyPolicyPressed}></Text></Text>
+        <Text style={styles.text}>To create a seller account{' '}<Text style={styles.link} onPress={onOrganizationPressed}>Click Here</Text> <Text style={styles.link} onPress={onPrivacyPolicyPressed}></Text></Text>
         <CustomButton text="Have an account? Sign in" onPress={onSigninPressed} type="tertiary"/>
 
       </View>
@@ -54,16 +54,24 @@ const Signup = () => {
 export default Signup
 
 const styles = StyleSheet.create({
+
+  container: {
+    backgroundColor:'#011'
+  },
+
   root: {
     alignItems:'center',
     padding:20,
     paddingTop:'20%',
+    backgroundColor:'#1211',
+    height:'100%',
+
   },
 
   title:{
     fontSize:24,
     fontWeight:'bold',
-    color:'black',
+    color:'white',
     margin:10,
     alignSelf:'flex-start',
   },
@@ -84,8 +92,7 @@ const styles = StyleSheet.create({
   },
 
   link:{
-    color:'#4765A9'
-
+    color:'white'
   }
 
 });

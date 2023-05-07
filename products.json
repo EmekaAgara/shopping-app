@@ -1,220 +1,253 @@
 [
   {
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1.png",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-15502400.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/orange-suit.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_1.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_2.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_3.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike1_4.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-10341113.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-15502400.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7349781.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-10341114.jpeg"
     ],
-    "name": "1Wild Berry",
-    "price": 160,
+    "name": "Orange Two Piece",
+    "price": 213,
     "sizes": [39, 40, 41],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge.\n\nAdvantages:\n- Encapsulated Air-Sole unit for lightweight cushioning.\n- Genuine leather on the upper for durability and a premium look.\n- Solid rubber outsole for greater traction on different types of surfaces.\n- Color Shown: Palomino/White/Wild Berry\n- Model: 553558-215\n- Proven efficacy\n\nA timeless rubber sole combines with a soft sockliner and encapsulated Nike Air cushioning for all-day comfort. The rubber outsole offers durable traction on a variety of surfaces."
-
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook...",
+    "description": "Wrinkle Free Orange Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
 
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6599138.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/purple-suit.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2_1.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2_2.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2_3.png",
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike2_4.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6599138.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-11598891.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-8872456.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-8872483.jpeg"
     ],
-    "name": "2Air Force 1",
-    "price": 169,
+    "name": "Purple Suit",
+    "price": 95,
+    "sizes": [36, 40, 41, 42, 47],
+    "seller": "@JohnJames",
+    "shortdescription": "Wrinkle Free Purple Suit. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free Purple Suit. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
+  },
+
+  {
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-5586514.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/cream-jacket.mp4",
+    "images": [
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-5586514.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-5586508.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-13093748.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-8499389.jpeg"
+    ],
+    "name": "White Denim Jacket",
+    "price": 149,
+    "sizes": [37, 40, 41, 42],
+    "seller": "@JohnJames",
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
+  },
+
+  {
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/white-girl-shiirt.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14664511.jpeg",
+    "images": [
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14664511.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7887458.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-mathilde-langevin-13347121.jpg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-aidi-tanndy-2302256.jpg"
+    ],
+    "name": "White Shirt",
+    "price": 60,
+    "sizes": [39, 40, 41],
+    "seller": "@JohnJames",
+    "shortdescription": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook...",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
+  },
+
+  {
+    "image": "https://images.pexels.com/photos/12371752/pexels-photo-12371752.jpeg?auto=compress&cs=tinysrgb&w=800",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/white-jacket.mp4",
+    "images": [
+      "https://images.pexels.com/photos/7561231/pexels-photo-7561231.jpeg?auto=compress&cs=tinysrgb&w=600",
+      "https://images.pexels.com/photos/15568957/pexels-photo-15568957.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/15568951/pexels-photo-15568951.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/12371752/pexels-photo-12371752.jpeg?auto=compress&cs=tinysrgb&w=800",
+      "https://images.pexels.com/photos/10955558/pexels-photo-10955558.jpeg?auto=compress&cs=tinysrgb&w=800"
+    ],
+    "name": "White Jacket",
+    "price": 99,
     "sizes": [39, 40, 41, 42, 43],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6974972.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/white-two-piece.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike3.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6974972.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6974967.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-8217410.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-5614129.webp",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-5474297.jpeg"
     ],
-    "name": "Nike Cosmic",
-    "price": 129,
+    "name": "White Track Suit",
+    "price": 120,
     "sizes": [38, 39, 40, 41, 42],
     "seller": "@JohnJames",
     "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
     "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
   },
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike4.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-1304647.webp",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/influencer-promotion.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike4.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-1304647.webp",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-3799837.webp",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-4066288.webp"
     ],
-    "name": "Retro High",
-    "price": 119,
-    "sizes": [39, 40, 41, 42, 45],
-    "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
-  },
-  {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike5.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
-    "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike5.png"
-    ],
-    "name": "Pegas Turbo",
-    "price": 95,
-    "sizes": [36, 40, 41, 42, 47],
-    "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
-  },
-  {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike6.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
-    "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike6.png"
-    ],
-    "name": "Nike Blazer",
-    "price": 200,
-    "sizes": [37, 38, 40, 41, 42],
-    "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
-  },
-  {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike7.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
-    "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike7.png"
-    ],
-    "name": "Nike Waffle",
-    "price": 154,
-    "sizes": [39, 40, 41],
-    "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
-  },
-  {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike8.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
-    "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike8.png"
-    ],
-    "name": "Nike Reax",
+    "name": "White Short Shirt",
     "price": 123,
     "sizes": [40, 41, 42],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike9.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-11511217.webp",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/brown-two-piece.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike9.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-11511217.webp",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6725079.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-4926705.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-9032107.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-9032101.jpeg"
     ],
-    "name": "Nike Dunk",
+    "name": "Brown two Piece",
     "price": 119,
     "sizes": [40, 41, 42, 43, 44],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
+
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike10.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-9425745.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/grey-timberland.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike10.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-9425745.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-5612368.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-5871578.jpeg"
     ],
-    "name": "Nike Air Penny",
-    "price": 149,
-    "sizes": [37, 40, 41, 42],
-    "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
-  },
-  {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike11.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
-    "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike11.png"
-    ],
-    "name": "Court Vision",
+    "name": "Grey Timberland Boots",
     "price": 132,
     "sizes": [39, 41, 42],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike12.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-1182825.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/black-two-piece.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike12.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-16466008.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-8717524.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7871161.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-1182825.jpeg"
     ],
-    "name": "Nike Immortality",
+    "name": "Black Leather Two Piece",
     "price": 88,
     "sizes": [39, 40, 41, 45],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike13.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6725079.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/brown-pant-suit.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike13.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-11511217.webp",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-6725079.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-4926705.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-9032107.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-9032101.jpeg"
     ],
-    "name": "Nike Aura",
+    "name": "Brown Pant Suit",
     "price": 201,
     "sizes": [39, 41, 42, 45],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
+
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike14.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14664511.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/black-shirt1.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike14.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14664511.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7887458.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-mathilde-langevin-13347121.jpg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-aidi-tanndy-2302256.jpg"
     ],
-    "name": "Nike Zoom",
-    "price": 104,
-    "sizes": [39, 41, 42, 43, 46],
+    "name": "Black Shirt",
+    "price": 201,
+    "sizes": [39, 41, 42, 45],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
+
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike15.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14132530.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/undies-two-piece.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike15.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-13694378.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-11643336.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14132530.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7349781-1.jpeg"
     ],
-    "name": "Nike Delta",
-    "price": 128,
-    "sizes": [39, 41, 42, 46],
+    "name": "Grey Underwear Set",
+    "price": 201,
+    "sizes": [39, 41, 42, 45],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   },
+
   {
-    "image": "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike16.png",
-    "video": "https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4",
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-11643336.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/brown-bikini.mp4",
     "images": [
-      "https://notjustdev-dummy.s3.us-east-2.amazonaws.com/nike/nike16.png"
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-13694378.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-11643336.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14132530.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7349781-1.jpeg"
     ],
-    "name": "Nike React",
+    "name": "Brown Bikini Set",
+    "price": 201,
+    "sizes": [39, 41, 42, 45],
+    "seller": "@JohnJames",
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
+  },
+
+  {
+    "image": "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7887458.jpeg",
+    "video": "https://emekaagara.com/wp-content/uploads/2023/05/black-two-piecee.mp4",
+    "images": [
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-14664511.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-photo-7887458.jpeg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-mathilde-langevin-13347121.jpg",
+      "https://emekaagara.com/wp-content/uploads/2023/05/pexels-aidi-tanndy-2302256.jpg"
+    ],
+    "name": "Black Two Piece",
     "price": 157,
     "sizes": [39, 41, 43, 45, 46],
     "seller": "@JohnJames",
-    "shortdescription": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look.",
-    "description": "Inspired by the original that debuted in 1985, the Air Jordan 1 Low delivers a clean, classic look that's familiar yet fresh. With an iconic design that blends seamlessly with any fit, these shoes are perfect for taking charge."
+    "shortdescription": "Wrinkle Free White Jacket. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook..",
+    "description": "Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant.\n\nBenefits:n- Gives you a great pleasant outlookWrinkle.\n- Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you. \n- Great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle. \n- Colors Available: White/Black/Blue/Grey\n- More Information: Gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook Wrinkle Free White Shirt. Liberty Cut. Wrinkle Resistant, gives you a great pleasant outlook."
   }
 ]
