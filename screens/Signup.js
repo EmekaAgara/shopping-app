@@ -15,11 +15,11 @@ const Signup = () => {
     };
 
     const onRegisterPressed = () => {
-      navigation.navigate('ProductsScreen');
+      navigation.navigate('Home');
     };
 
     const onOrganizationPressed = () => {
-      navigation.navigate('SignupOrganization');
+      navigation.navigate('Home');
     };
 
     const onPrivacyPolicyPressed = () => {
