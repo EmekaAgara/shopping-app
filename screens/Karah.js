@@ -5,7 +5,7 @@ import { StatusBar } from 'expo-status-bar';
 import {OPENAI_API_KEY} from "@env"
 import {MaterialIcons} from "@expo/vector-icons"
 import { GiftedChat } from 'react-native-gifted-chat';
-const keyboardVerticalOffset = Platform.OS === 'ios' ? 40 : 0
+import * as Speech from 'expo-speech'
 
 const Karah = () => {
   const [messages, setMessages] = useState([])
@@ -36,16 +36,19 @@ const Karah = () => {
       })
     }).then((response) => response.json()).then((data) => {
       console.log(data.choices[0].text)
+      setInputMessage("")
       setOutputMessage(data.choices[0].text.trim())
       const message = {
         _id:Math.random().toString(36).substring(7),
         text:(data.choices[0].text.trim()),
         createdAt:new Date(),
-        user:{_id:2, name:"Karahh"}
+        user:{_id:2, name:"Karah"}
       }
       setMessages((previousMessages)=>
         GiftedChat.append(previousMessages,[message])
       )
+      options={};
+      Speech.speak((data.choices[0].text),options)
     })
   }
 
@@ -56,7 +59,7 @@ const Karah = () => {
   }
   
   return (
-    <KeyboardAvoidingView behavior='padding' enabled={true} style={styles.container}>
+    <KeyboardAvoidingView behavior='padding'  style={styles.container}>
       <Text style={styles.title}>Harah</Text>
       <View style={{ flex:1, justifyContent:'center'}}>
         {/* <Text>{outputMessage}</Text> */}
@@ -65,7 +68,7 @@ const Karah = () => {
 
       <View style={{flexDirection:'row'}}>
         <View style={{ flex:1,marginLeft: 10, marginBottom:20, backgroundColor:"white", borderRadius:10, borderColor:"gray", borderWidth:1, height:60, marginLeft:20, marginRight:10,justifyContent:'center', paddingLeft:10, paddingRight:10}}>
-          <TextInput placeholder='Enter your question' onChangeText={handleTextInput}/>
+          <TextInput placeholder='Enter your question' onChangeText={handleTextInput} value={inputMessage}/>
         </View>
 
         <TouchableOpacity onPress={handleButtonClick}>
@@ -85,7 +88,7 @@ export default Karah
 const styles = StyleSheet.create({
   container:{
     flex:1,
-    // backgroundColor:'#000',
+    backgroundColor:'#000',
     // backgroundColor:'#fff',
     // alignItems:'center',
     // justifyContent:'center'
