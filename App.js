@@ -31,7 +31,7 @@ export default function App() {
       <SafeAreaProvider>
         <Stack.Navigator>
 
-        <Stack.Screen
+        {/* <Stack.Screen
             name='SplashScreen'
             component={SplashScreen}
             options={{
@@ -69,7 +69,7 @@ export default function App() {
             options={{
             headerShown:false,
             }}
-          />
+          /> */}
 
 
           <Stack.Screen

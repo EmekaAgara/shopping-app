@@ -46,7 +46,7 @@ const Home = () => {
 
   return (
     <View style={styles.container} behavior="padding">
-      <Text style={styles.HelloText}>Hey there </Text>
+      <Text style={styles.HelloText}>Welcome to Karah </Text>
 
       <FlatList
         data={data}
@@ -79,9 +79,9 @@ const styles = StyleSheet.create({
 
   HelloText: {
     color: "white",
-    fontSize: 25,
+    fontSize: 20,
     fontWeight: 700,
-    textAlign: "left",
+    textAlign: "center",
     paddingBottom: 20,
   },
 
