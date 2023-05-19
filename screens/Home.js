@@ -23,8 +23,16 @@ const data = [
   {
     id: "2",
     image: require("../assets/icon.png"),
+    title: "Recommended Products",
+    description: "Shop recommended products based on conversations with Karah",
+    screen: "Recommended",
+  },
+
+  {
+    id: "3",
+    image: require("../assets/icon.png"),
     title: "Shop Products",
-    description: "Shop recommended products from the store",
+    description: "Shop all products from the store",
     screen: "ProductsScreen",
   },
 

@@ -21,6 +21,8 @@ import ProductDetails from './screens/ProductDetails';
 import ProductsScreen from './screens/ProductsScreen';
 import Pay from './screens/Pay';
 import Karah from './screens/Karah';
+import Recommended from './screens/Recommended';
+
 
 export default function App() {
   const Stack = createStackNavigator();
@@ -107,6 +109,14 @@ export default function App() {
           <Stack.Screen
             name='Karah'
             component={Karah}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+          <Stack.Screen
+            name='Recommended'
+            component={Recommended}
             options={{
             headerShown:false,
             }}
