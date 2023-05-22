@@ -22,6 +22,7 @@ import ProductsScreen from './screens/ProductsScreen';
 import Pay from './screens/Pay';
 import Karah from './screens/Karah';
 import Recommended from './screens/Recommended';
+import CameraScreen from './screens/CameraScreen';
 
 
 export default function App() {
@@ -133,6 +134,14 @@ export default function App() {
           <Stack.Screen
             name='ProductDetails'
             component={ProductDetails}
+            options={{
+            headerShown:false,
+            }}
+          />
+
+          <Stack.Screen
+            name='CameraScreen'
+            component={CameraScreen}
             options={{
             headerShown:false,
             }}

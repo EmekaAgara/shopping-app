@@ -7,6 +7,7 @@ import { cartSlice } from "../store/cartSlice";
 import { useGetProductQuery } from "../store/apiSlice";
 import { useNavigation } from "@react-navigation/native";
 
+
 const ProductDetails = ({route}) => {
   const id = route.params.id;
   const {data, isLoading, error} = useGetProductQuery(id);
@@ -20,6 +21,10 @@ const ProductDetails = ({route}) => {
     dispatch(cartSlice.actions.addCartItem({product}));
   }
 
+  const viewAr = () => {
+    navigation.navigate('CameraScreen');
+  };
+
   if(isLoading){
     return <ActivityIndicator color="#3B71F3" size="small" style={styles.indicator}/>
 
@@ -32,11 +37,6 @@ const ProductDetails = ({route}) => {
 
   const product = data.data;
 
-
-
-  const viewAr = () => {
-    dispatch(cartSlice.actions.addCartItem({product}));
-  }
 
   return (
     <View>
