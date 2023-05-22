@@ -1,144 +1,184 @@
-import { ActivityIndicator, StyleSheet, Text, View,Image } from 'react-native'
-import React, { useEffect, useState } from 'react'
-import { SafeAreaView } from 'react-native-safe-area-context'
-import { FlatList, TextInput } from 'react-native-gesture-handler'
-import filter from "lodash.filter"
-const API_ENDPOINT = `https://randomuser.me/api?results=30`
-
-const Recommended = () => {
-  const [isLoading, setIsLoading] = useState(false);
-  const [data, setData] = useState([]);
-  const [error, setError] = useState(null);
-  const [fullData, setFullData] = useState([]);
-  const [searchQuery, setSearchQuery] = useState("");
-
-  useEffect(() => {
-    setIsLoading(true);
-    fetchData(API_ENDPOINT);
-  },  []);
-
-  const fetchData = async(url)  => {
-    try {
-      const response = await fetch(url);
-      const json = await response.json();
-      setData(json.results);
-
-      console.log(json.results);
-
-      setFullData(json.results);
-
-      setIsLoading(false);
-      
-    } catch(error){
-      setError(error);
-      console.log(error);
-      setIsLoading(false)
-    }
-  }
+import { StyleSheet, Text, View,Image,TouchableOpacity, ImageBackground, FlatList, Dimensions, ActivityIndicator } from 'react-native'
+import React from 'react'
+import { useNavigation } from '@react-navigation/native'
+// import products from '../src/data/products'
+import { StatusBar } from 'expo-status-bar'
+import { Feather } from '@expo/vector-icons';
+import { useSelector,useDispatch } from 'react-redux';
+import { productsSlice } from '../store/productsSlice';
+import { selectNumberOfItems } from '../store/cartSlice';
+import { Video } from 'expo-av';
+import { useGetProductsQuery } from '../store/apiSlice';
 
 
-  const handleSearch = (query) => {
-    setSearchQuery(query);
-    const formattedQuery = query.toLowerCase();
-    const filteredData = filter(fullData, (user) => {
-      return contains (user, formattedQuery);
-    });
-    setData(filteredData);
-  };
+export default function Recommended() {
+  
+  const dispatch = useDispatch();
+  // const products = useSelector((state) => state.products.products);
+  const {data, isLoading, error} = useGetProductsQuery();
+  const numberOfItems = useSelector(selectNumberOfItems);
+  const video = React.useRef(null);
+  const secondVideo = React.useRef(null);
+  const [status, setStatus] = React.useState({});
+  const [statusSecondVideo, setStatusSecondVideo] = React.useState({});
+  const navigation = useNavigation();
 
-  const contains =({name, email}, query) => {
-    const {first, last} = name;
+  if(isLoading){
+    return <ActivityIndicator color="#3B71F3" size="small" style={styles.indicator}/>
 
-    if(
-      first.includes(query) ||
-      last.includes(query) ||
-      email.includes(query)
-    ){
-      return true;
-    }
-    return false;
-  }
-
-  if (isLoading) {
-    return(
-      <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
-        <ActivityIndicator size={"small"}/>
-      </View>
-    );
   }
 
   if(error){
-    return(
-      <View style={{flex:1, justifyContent:'center', alignItems:'center'}}>
-      <Text>Error fetching data</Text>
-    </View>
-    )
+    console.log(error)
+    return<Text>Error Fetching Products:{error.error}</Text>
   }
 
+  const products = data.data;
+
+
   return (
-    <SafeAreaView style={{flex:1, marginHorizontal:20}}>
-      <TextInput
-        placeholder='search'
-        clearButtonMode='always'
-        style={styles.search}
-        autoCapitalize='none'
-        autoCorrect={false}
-        value={searchQuery}
-        onChangeText={(query) => handleSearch(query)}
+    <>
+    <TouchableOpacity style={styles.icon} onPress={() => navigation.navigate('Cart')}  >
+        <Feather name="shopping-cart" size={24} color="black" />
+        <Text style={styles.text}>{numberOfItems}</Text>
+      </TouchableOpacity>
+      
+    <FlatList
+
+    data={products}
+
+    renderItem={({item}) => (
+
+      
+      <TouchableOpacity onPress={() => {
+        // dispatch(productsSlice.actions.setSelectedProduct(item.id));
+       navigation.navigate('ProductDetails',  {id:item._id});}} style={styles.itemContainer}>
+        {/* <Image source={{ uri:item.image }} style={styles.image} /> */}
+        
+        <Video
+        ref={video}
+        style={styles.video}
+        // source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
+        // source={item.video}
+        source={{uri:item.video}}
+        shouldPlay
+        resizeMode='cover'
+        isLooping
+        onPlaybackStatusUpdate={setStatus}
       />
 
-      <FlatList
-        data={data}
-        keyExtractor={(item) => item.login.username}
-        renderItem={({item}) => (
-          <View style={styles.itemContainer}>
-            <Image source={{uri: item.picture.thumbnail}} style={styles.image}/>
 
-            <View>
-            <Text style={styles.textName}>{item.name.first} {item.name.last}</Text>
-            <Text style={styles.textEmail}>{item.email}</Text>
-            </View>
 
-          </View>
-        )}
-      />
-    </SafeAreaView>
+      <View style={styles.uiContainer}>
+      <Text style={styles.mainText}>{item.name}</Text>
+      <Text style={styles.sellerText}>{item.seller}</Text>
+      <Text style={styles.subText}>{item.shortdescription}</Text>
+      <Text style={styles.priceText}>${item.price}</Text>
+      {/* <Text style={styles.subText}>{item.description}</Text> */}
+
+      </View>
+      </TouchableOpacity>
+    )}
+
+    pagingEnabled
+  />
+</>
   )
 }
 
-export default Recommended
-
 const styles = StyleSheet.create({
-  search:{
-    paddingHorizontal:20,
-    paddingVertical:15,
-    borderColor:'#ccc',
-    borderWidth:1,
-    borderRadius:8
-  },
+    container: {
+      flex:1,
+      backgroundColor:'000',
+      alignItems:'center',
+      justifyContent:'center'
+    },
 
-  itemContainer:{
-    flexDirection:"row",
-    alignItems:"center",
-    marginLeft:10,
-    marginTop:10,
-  },
+    uiContainer: {
+      display:'flex',
+      justifyContent:'space-between'
+      
+      
 
-  image:{
-    width:50,
-    height:50,
-    borderRadius:25,
-  },
+    },
 
-  textName:{
-    fontSize:17,
-    marginLeft:10,
-    fontWeight:"600",
-  },
+    mainText: {
+      color:'white',
+      fontSize:27,
+      fontWeight:600,
+      bottom:90,
+      width:'90%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+    },
 
-  textEmail:{
-    fontSize:14,
-    marginLeft:10,
-    color:"grey",
-  }
-})
+    sellerText: {
+      color:'white',
+      fontSize:15,
+      fontWeight:600,
+      bottom:65,
+      width:'90%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+    },
+  
+    subText: {
+      color:'white',
+      fontSize:15,
+      fontWeight:300,
+      bottom:20,
+      width:'100%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+    },
+
+    priceText: {
+      color:'white',
+      fontSize:17,
+      fontWeight:500,
+      bottom:100,
+      // width:'90%',
+      padding:25,
+      paddingBottom:25,
+      position:'absolute',
+      alignSelf:'flex-end'
+    },
+
+    icon:{
+      position:'absolute',
+      top:60,
+      zIndex:1,
+      right:30,
+      padding:13,
+      backgroundColor:'white',
+      borderRadius:7,
+      shadowColor: "#000",
+      shadowOffset: {
+	      width: 0,
+	      height: 2,
+      },
+      shadowOpacity: 0.07,
+      shadowRadius: 3.84,
+      levation: 5,
+      flexDirection:'row',
+
+    },
+  
+    video:{
+      height:Dimensions.get('window').height,
+      resizeMode:'contain',
+      backgroundColor:'#000',
+    },      
+    text:{
+      marginLeft:2,
+      fontWeight:'400'
+    },
+
+    indicator: {
+      flex: 1,
+      
+    }
+  });

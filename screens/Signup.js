@@ -56,14 +56,14 @@ export default Signup
 const styles = StyleSheet.create({
 
   container: {
-    backgroundColor:'#011'
+    backgroundColor:'#080808'
   },
 
   root: {
     alignItems:'center',
     padding:20,
     paddingTop:'20%',
-    backgroundColor:'#1211',
+    backgroundColor:'#080808',
     height:'100%',
 
   },

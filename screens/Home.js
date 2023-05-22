@@ -36,6 +36,14 @@ const data = [
     screen: "ProductsScreen",
   },
 
+  {
+    id: "4",
+    image: require("../assets/seller.png"),
+    title: "Create a Store",
+    description: "Create a seller account and sell Products",
+    screen: "ProductsScreen",
+  },
+
 ];
 
 const Home = () => {
@@ -87,7 +95,7 @@ const styles = StyleSheet.create({
 
   HelloText: {
     color: "white",
-    fontSize: 20,
+    fontSize: 30,
     fontWeight: 700,
     textAlign: "center",
     paddingBottom: 20,

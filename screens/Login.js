@@ -43,7 +43,7 @@ export default Login
 const styles = StyleSheet.create({
 
   container: {
-    backgroundColor:'#011'
+    backgroundColor:'#080808'
   },
 
 
@@ -51,7 +51,7 @@ const styles = StyleSheet.create({
     alignItems:'center',
     padding:20,
     paddingTop:'40%',
-    backgroundColor:'#1211',
+    backgroundColor:'#080808',
     height:'100%',
   },
 

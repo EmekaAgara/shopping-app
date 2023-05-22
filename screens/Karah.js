@@ -60,7 +60,7 @@ const Karah = () => {
   
   return (
     <KeyboardAvoidingView behavior='padding'  style={styles.container}>
-      <Text style={styles.title}>Ask Harah</Text>
+      <Text style={styles.title}>Ask Karah</Text>
       <View style={{ flex:1, justifyContent:'center'}}>
         {/* <Text>{outputMessage}</Text> */}
         <GiftedChat messages={messages} renderInputToolbar={() => {}} user={{_id:1}} minInputToolbarHeight={0}/>
