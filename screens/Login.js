@@ -25,7 +25,7 @@ const Login = () => {
     <SafeAreaView style={styles.container}>
       <View style={styles.root}>
         <Image
-          source={require('../assets/XRP.png')}
+          source={require('../assets/karah.png')}
           style={[styles.logo, {height:height * 0.2}]}
         />
         <Text style={styles.title}>Login to your account</Text>

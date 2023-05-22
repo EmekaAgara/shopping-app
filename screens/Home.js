@@ -14,15 +14,15 @@ import { FlatList } from "react-native";
 const data = [
   {
     id: "1",
-    image: require("../assets/icon.png"),
+    image: require("../assets/chatbot.png"),
     title: "Ask Karah",
-    description: "Karah is your AI Personal shopping assistant, feel free to ask her for recommendations or just have a chat",
+    description: "Karah is your AI Personal shopping assistant, feel free to ask her for recommendations",
     screen: "Karah",
   },
 
   {
     id: "2",
-    image: require("../assets/icon.png"),
+    image: require("../assets/recommended.png"),
     title: "Recommended Products",
     description: "Shop recommended products based on conversations with Karah",
     screen: "Recommended",
@@ -30,9 +30,9 @@ const data = [
 
   {
     id: "3",
-    image: require("../assets/icon.png"),
+    image: require("../assets/shopproducts.png"),
     title: "Shop Products",
-    description: "Shop all products from the store",
+    description: "View and shop all available products from the store",
     screen: "ProductsScreen",
   },
 
