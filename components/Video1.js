@@ -24,15 +24,15 @@ const Video1 = () => {
         ref={video}
         style={styles.video}
         // source={{uri:'https://emekaagara.com/wp-content/uploads/2023/04/pexels-cottonbro-studio-4008365-1080x2048-50fps.mp4'}}
-        source={require('../assets/video1.mp4')}
+        source={require('../assets/promote_business.mp4')}
         shouldPlay
         resizeMode='cover'
         isLooping
         onPlaybackStatusUpdate={setStatus}
       />
 
-      <Text style={styles.mainText}>Personalized Shopping experience</Text>
-      <Text style={styles.subText}>Get Personalized reccommendations based on your shopping history preferences</Text>
+      <Text style={styles.mainText}>Personalized Shopping Experience</Text>
+      <Text style={styles.subText}>Get Reccommendations based on your preferences and conversations your AI Assistant</Text>
 
       <TouchableOpacity onPress={onNextPress} style={styles.ButtonContainer}>
         <Text style={styles.ButtonText}>Next</Text>

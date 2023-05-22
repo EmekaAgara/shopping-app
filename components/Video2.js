@@ -15,7 +15,7 @@ const Video2 = () => {
   const navigation = useNavigation();
 
   const onNextPress = () => {
-    navigation.navigate('SplashScreen2');
+    navigation.navigate('SplashScreen3');
   };
   
   return (
