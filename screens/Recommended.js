@@ -8,14 +8,14 @@ import { useSelector,useDispatch } from 'react-redux';
 import { productsSlice } from '../store/productsSlice';
 import { selectNumberOfItems } from '../store/cartSlice';
 import { Video } from 'expo-av';
-import { useGetProductsQuery } from '../store/apiSlice';
+import { useGetRecProductsQuery } from '../store/apiSlice';
 
 
 export default function Recommended() {
   
   const dispatch = useDispatch();
   // const products = useSelector((state) => state.products.products);
-  const {data, isLoading, error} = useGetProductsQuery();
+  const {data, isLoading, error} = useGetRecProductsQuery();
   const numberOfItems = useSelector(selectNumberOfItems);
   const video = React.useRef(null);
   const secondVideo = React.useRef(null);
@@ -52,7 +52,7 @@ export default function Recommended() {
       
       <TouchableOpacity onPress={() => {
         // dispatch(productsSlice.actions.setSelectedProduct(item.id));
-       navigation.navigate('ProductDetails',  {id:item._id});}} style={styles.itemContainer}>
+       navigation.navigate('RecProductDetails',  {id:item._id});}} style={styles.itemContainer}>
         {/* <Image source={{ uri:item.image }} style={styles.image} /> */}
         
         <Video

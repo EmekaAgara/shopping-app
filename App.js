@@ -23,6 +23,7 @@ import Pay from './screens/Pay';
 import Karah from './screens/Karah';
 import Recommended from './screens/Recommended';
 import CameraScreen from './screens/CameraScreen';
+import RecProductDetails from './screens/RecProductDetails';
 
 
 export default function App() {
@@ -138,6 +139,18 @@ export default function App() {
             headerShown:false,
             }}
           />
+
+          <Stack.Screen
+            name='RecProductDetails'
+            component={RecProductDetails}
+            options={{
+            headerShown:false,
+            }}
+          />
+          
+          
+          
+
 
           <Stack.Screen
             name='CameraScreen'

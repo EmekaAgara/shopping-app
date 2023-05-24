@@ -8,16 +8,16 @@ import { useGetProductQuery, useGetRecProductQuery } from "../store/apiSlice";
 import { useNavigation } from "@react-navigation/native";
 
 
-const ProductDetails = ({route}) => {
+const RecProductDetails = ({route}) => {
   const id = route.params.id;
-  const {data, isLoading, error} = useGetProductQuery(id);
+  const {data, isLoading, error} = useGetRecProductQuery(id);
   // const product = useSelector((state) => state.products.selectedProduct);
   const dispatch = useDispatch();
   const {width} = useWindowDimensions(id);
   const navigation = useNavigation();
 
   const addToCart = () => {
-    navigation.navigate('ProductsScreen');
+    navigation.navigate('Recommended');
     dispatch(cartSlice.actions.addCartItem({product}));
   }
 
@@ -139,4 +139,4 @@ const styles = StyleSheet.create({
 
 });
 
-export default ProductDetails;
+export default RecProductDetails;

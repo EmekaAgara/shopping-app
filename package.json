@@ -20,7 +20,7 @@
     "expo-web-browser": "~12.1.1",
     "lodash.filter": "^4.6.0",
     "react": "18.2.0",
-    "react-native": "0.71.7",
+    "react-native": "0.71.8",
     "react-native-dialog": "^9.3.0",
     "react-native-gesture-handler": "^2.9.0",
     "react-native-gifted-chat": "^2.1.0",

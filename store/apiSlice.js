@@ -10,9 +10,19 @@ export const apiSlice = createApi({
     getProducts: builder.query({
       query: () => 'products',
     }),
+
     getProduct: builder.query({
       query: (id) => `products/${id}`,
     }),
+
+    getRecProducts: builder.query({
+      query: () => 'recproduct',
+    }),
+
+    getRecProduct: builder.query({
+      query: (id) => `recproduct/${id}`,
+    }),
+
     // Orders
     createOrder: builder.mutation({
       query: (newOrder) => ({
@@ -37,6 +47,8 @@ export const apiSlice = createApi({
 
 export const {
   useGetProductQuery,
+  useGetRecProductQuery,
+  useGetRecProductsQuery,
   useGetProductsQuery,
   useCreateOrderMutation,
   useGetOrderQuery,
