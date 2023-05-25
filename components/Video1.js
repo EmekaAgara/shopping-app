@@ -32,7 +32,7 @@ const Video1 = () => {
       />
 
       <Text style={styles.mainText}>Personalized Shopping Experience</Text>
-      <Text style={styles.subText}>Get Reccommendations based on your preferences and conversations your AI Assistant</Text>
+      <Text style={styles.subText}>Get Reccommendations based on your preferences & conversations your AI Assistant</Text>
 
       <TouchableOpacity onPress={onNextPress} style={styles.ButtonContainer}>
         <Text style={styles.ButtonText}>Next</Text>
