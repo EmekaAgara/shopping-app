@@ -5,9 +5,7 @@ import CartListItem from '../components/CartListItem'
 import { useDispatch, useSelector } from 'react-redux'
 import { selectDeliveryPrice, selectSubtotal, selectTotal, cartSlice } from '../store/cartSlice'
 import { useCreateOrderMutation, useCreatePaymentIntentMutation } from '../store/apiSlice'
-import { selectedProduct } from '../store/productsSlice'
 import { useLinkTo, useNavigation } from '@react-navigation/native'
-import Dialog from "react-native-dialog";
 
 
 const ShoppingCartTotals = ()=> {

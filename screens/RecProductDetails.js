@@ -1,8 +1,6 @@
 import { Image, StyleSheet,Text, View,FlatList, useWindowDimensions, Pressable, TouchableOpacity, ActivityIndicator } from "react-native";
-// import products from '../src/data/products'
 import { ScrollView } from "react-native-gesture-handler";
 import { useDispatch, useSelector } from "react-redux";
-// import cart from "../src/data/cart";
 import { cartSlice } from "../store/cartSlice";
 import { useGetProductQuery, useGetRecProductQuery } from "../store/apiSlice";
 import { useNavigation } from "@react-navigation/native";
@@ -11,7 +9,6 @@ import { useNavigation } from "@react-navigation/native";
 const RecProductDetails = ({route}) => {
   const id = route.params.id;
   const {data, isLoading, error} = useGetRecProductQuery(id);
-  // const product = useSelector((state) => state.products.selectedProduct);
   const dispatch = useDispatch();
   const {width} = useWindowDimensions(id);
   const navigation = useNavigation();

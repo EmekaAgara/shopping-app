@@ -1,11 +1,9 @@
 import { StyleSheet, Text, View,Image,TouchableOpacity, ImageBackground, FlatList, Dimensions, ActivityIndicator } from 'react-native'
 import React from 'react'
 import { useNavigation } from '@react-navigation/native'
-// import products from '../src/data/products'
 import { StatusBar } from 'expo-status-bar'
 import { Feather } from '@expo/vector-icons';
 import { useSelector,useDispatch } from 'react-redux';
-import { productsSlice } from '../store/productsSlice';
 import { selectNumberOfItems } from '../store/cartSlice';
 import { Video } from 'expo-av';
 import { useGetRecProductsQuery } from '../store/apiSlice';
@@ -14,7 +12,6 @@ import { useGetRecProductsQuery } from '../store/apiSlice';
 export default function Recommended() {
   
   const dispatch = useDispatch();
-  // const products = useSelector((state) => state.products.products);
   const {data, isLoading, error} = useGetRecProductsQuery();
   const numberOfItems = useSelector(selectNumberOfItems);
   const video = React.useRef(null);
@@ -44,6 +41,7 @@ export default function Recommended() {
       </TouchableOpacity>
       
     <FlatList
+      showsVerticalScrollIndicator={false}
 
     data={products}
 

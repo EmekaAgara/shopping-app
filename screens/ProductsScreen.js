@@ -5,7 +5,6 @@ import { useNavigation } from '@react-navigation/native'
 import { StatusBar } from 'expo-status-bar'
 import { Feather } from '@expo/vector-icons';
 import { useSelector,useDispatch } from 'react-redux';
-import { productsSlice } from '../store/productsSlice';
 import { selectNumberOfItems } from '../store/cartSlice';
 import { Video } from 'expo-av';
 import { useGetProductsQuery } from '../store/apiSlice';
@@ -44,10 +43,11 @@ export default function ProductsScreen() {
       </TouchableOpacity>
       
     <FlatList
+      showsVerticalScrollIndicator={false}
 
-    data={products}
+      data={products}
 
-    renderItem={({item}) => (
+      renderItem={({item}) => (
 
       
       <TouchableOpacity onPress={() => {
