@@ -31,7 +31,7 @@ const Karah = () => {
       },
       body: JSON.stringify({
         model: "text-davinci-003",
-        prompt: `your name is Karah, act as my personal stylist, answer questions and recommend outifts with one sentence only.\n
+        prompt: `your name is Karah, act as my personal stylist, answer questions and recommend outifts with a short sentence.\n
                  Topic: ${inputMessage}\n`,
       })
     }).then((response) => response.json()).then((data) => {
