@@ -34,7 +34,6 @@ export default function App() {
     <NavigationContainer>
       <SafeAreaProvider>
         <Stack.Navigator>
-
         <Stack.Screen
             name='SplashScreen'
             component={SplashScreen}
