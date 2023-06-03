@@ -2,8 +2,9 @@ import { Camera, CameraType } from "expo-camera";
 import { useState } from "react";
 import { Button, StyleSheet, Text, TouchableOpacity, View } from "react-native";
 import Ar from "../components/Ar";
+import Ar3 from "../components/Ar3";
 
-export default function CameraScreen() {
+export default function ArCameraScreen() {
   const [type, setType] = useState(CameraType.back);
   const [permission, requestPermission] = Camera.useCameraPermissions();
 
@@ -33,7 +34,7 @@ export default function CameraScreen() {
   return (
     <View style={styles.container}>
       <Camera style={styles.camera} type={type}>
-        <Ar style={styles.ar} />
+        <Ar3 />
         <View style={styles.buttonContainer}>
           <TouchableOpacity style={styles.button} onPress={toggleCameraType}>
             <Text style={styles.text}>Flip Camera</Text>

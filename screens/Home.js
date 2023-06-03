@@ -16,7 +16,8 @@ const data = [
     id: "1",
     image: require("../assets/chatbot.png"),
     title: "Ask Karah",
-    description: "Karah is your AI Personal shopping assistant, feel free to ask her for recommendations",
+    description:
+      "Karah is your AI Personal shopping assistant, feel free to ask her for recommendations",
     screen: "Karah",
   },
 
@@ -37,13 +38,20 @@ const data = [
   },
 
   {
+    id: "5",
+    image: require("../assets/shopproducts.png"),
+    title: "View Products in AR",
+    description: "View products in 3D/AR Rendered scene",
+    screen: "ArProductsScreen",
+  },
+
+  {
     id: "4",
     image: require("../assets/seller.png"),
     title: "Create a Store",
     description: "Create a seller account and sell Products",
     screen: "ProductsScreen",
   },
-
 ];
 
 const Home = () => {
@@ -59,7 +67,6 @@ const Home = () => {
     navigation.navigate("Karah");
   };
 
-
   return (
     <View style={styles.container} behavior="padding">
       <Text style={styles.HelloText}>Welcome to Karah </Text>
@@ -70,7 +77,8 @@ const Home = () => {
         renderItem={({ item }) => (
           <TouchableOpacity
             onPress={() => navigation.navigate(item.screen)}
-            style={styles.ButtonContainer}>
+            style={styles.ButtonContainer}
+          >
             <Image source={item.image} style={styles.cardImage} />
             <Text style={styles.mainText}>{item.title}</Text>
             <Text style={styles.descText}>{item.description}</Text>

@@ -13,14 +13,14 @@ import { ScrollView } from "react-native-gesture-handler";
 import { useDispatch, useSelector } from "react-redux";
 import { cartSlice } from "../store/cartSlice";
 import { useGetProductQuery, useGetRecProductQuery } from "../store/apiSlice";
-import { useNavigation, useRoute } from "@react-navigation/native";
+import { useNavigation } from "@react-navigation/native";
 
-const ProductDetails = () => {
+const ArProductDetails = ({ route }) => {
+  const id = route.params.id;
   const { data, isLoading, error } = useGetProductQuery(id);
   const dispatch = useDispatch();
   const { width } = useWindowDimensions(id);
   const navigation = useNavigation();
-  const response = 1000;
 
   const addToCart = () => {
     navigation.navigate("ProductsScreen");
@@ -28,9 +28,7 @@ const ProductDetails = () => {
   };
 
   const viewAr = () => {
-    navigation.navigate("CameraScreen", {
-      paramKey: data,
-    });
+    navigation.navigate("ArCameraScreen");
   };
 
   if (isLoading) {
@@ -140,4 +138,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default ProductDetails;
+export default ArProductDetails;

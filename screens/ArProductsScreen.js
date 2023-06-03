@@ -19,7 +19,7 @@ import { selectNumberOfItems } from "../store/cartSlice";
 import { Video } from "expo-av";
 import { useGetProductsQuery } from "../store/apiSlice";
 
-export default function ProductsScreen() {
+export default function ArProductsScreen() {
   const dispatch = useDispatch();
   // const products = useSelector((state) => state.products.products);
   const { data, isLoading, error } = useGetProductsQuery();
@@ -64,7 +64,7 @@ export default function ProductsScreen() {
           <TouchableOpacity
             onPress={() => {
               // dispatch(productsSlice.actions.setSelectedProduct(item.id));
-              navigation.navigate("ProductDetails", { id: item._id });
+              navigation.navigate("ArProductDetails", { id: item._id });
             }}
             style={styles.itemContainer}
           >

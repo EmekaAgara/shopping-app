@@ -1,34 +1,29 @@
-import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
+import React from "react";
+import { StyleSheet, Text, View } from "react-native";
 import { SafeAreaView } from "react-native";
-import { WebView } from 'react-native-webview';
+import { WebView } from "react-native-webview";
 
-const Pay = ({route}) => {
+const Pay = ({ route }) => {
   return (
-    
-    <SafeAreaView
-      style={styles.safeArea}>
-      <WebView 
+    <SafeAreaView style={styles.safeArea}>
+      <WebView
         startInLoadingState={true}
         showsHorizontalScrollIndicator={false}
         showsVerticalScrollIndicator={false}
-        source={{ uri:route.params.paramKey}}
+        source={{ uri: route.params.paramKey }}
         javaScriptEnabled={true}
         domStorageEnabled={true}
       />
     </SafeAreaView>
   );
-}
-
-
-
+};
 
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#fff',
-    maxWidth:'100%',
-  }
-})
+    backgroundColor: "#fff",
+    maxWidth: "100%",
+  },
+});
 
-export default Pay
+export default Pay;
