@@ -10,11 +10,13 @@ import {
 import React from "react";
 import { useNavigation } from "@react-navigation/native";
 import { FlatList } from "react-native";
+import Lottie from "lottie-react-native";
 
 const data = [
   {
     id: "1",
-    image: require("../assets/chatbot.png"),
+    // image: require("../assets/chatbot.png"),
+    image: require("../assets/chatbot.json"),
     title: "Ask Karah",
     description:
       "Karah is your AI Personal shopping assistant, feel free to ask her for recommendations",
@@ -23,7 +25,8 @@ const data = [
 
   {
     id: "2",
-    image: require("../assets/recommended.png"),
+    // image: require("../assets/recommended.png"),
+    image: require("../assets/shop.json"),
     title: "Recommended Products",
     description: "Shop recommended products based on conversations with Karah",
     screen: "Recommended",
@@ -31,7 +34,8 @@ const data = [
 
   {
     id: "3",
-    image: require("../assets/shopproducts.png"),
+    // image: require("../assets/shopproducts.png"),
+    image: require("../assets/recommended.json"),
     title: "Shop Products",
     description: "View and shop all available products from the store",
     screen: "ProductsScreen",
@@ -39,7 +43,8 @@ const data = [
 
   {
     id: "5",
-    image: require("../assets/shopproducts.png"),
+    // image: require("../assets/shopproducts.png"),
+    image: require("../assets/vr.json"),
     title: "View Products in AR",
     description: "View products in 3D/AR Rendered scene",
     screen: "ArProductsScreen",
@@ -47,7 +52,8 @@ const data = [
 
   {
     id: "4",
-    image: require("../assets/seller.png"),
+    // image: require("../assets/seller.png"),
+    image: require("../assets/store.json"),
     title: "Create a Store",
     description: "Create a seller account and sell Products",
     screen: "ProductsScreen",
@@ -79,7 +85,14 @@ const Home = () => {
             onPress={() => navigation.navigate(item.screen)}
             style={styles.ButtonContainer}
           >
-            <Image source={item.image} style={styles.cardImage} />
+            {/* <Image source={item.image} style={styles.cardImage} /> */}
+            <Lottie
+              source={item.image}
+              autoPlay
+              loop
+              style={styles.cardImage}
+            />
+
             <Text style={styles.mainText}>{item.title}</Text>
             <Text style={styles.descText}>{item.description}</Text>
           </TouchableOpacity>
@@ -110,11 +123,12 @@ const styles = StyleSheet.create({
   },
 
   cardImage: {
-    padding: 55,
-    margin: 20,
-    paddingBottom: 30,
-    height: 35,
-    width: 35,
+    // padding: 55,
+    // margin: 20,
+    // paddingBottom: 30,
+    marginTop: 1,
+    height: 120,
+    width: 110,
     resizeMode: "contain",
     alignSelf: "flex-start",
     position: "absolute",
