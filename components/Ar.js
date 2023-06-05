@@ -14,8 +14,8 @@ const Ar = () => {
   return (
     <View style={styles.container}>
       <Image
-        source={require("../assets/karah.png")}
-        style={[styles.image, { height: height * 0.2 }]}
+        source={require("../assets/shirt.png")}
+        style={[styles.image, { height: height * 0.4 }]}
       />
       <Text></Text>
     </View>
@@ -29,8 +29,8 @@ const styles = StyleSheet.create({
     // position: "absolute",
     zIndex: 1,
     alignSelf: "center",
-    width: "50%",
-    height: "50%,",
-    top: "200%",
+    width: "100%",
+    // height: "100%",
+    top: "100%",
   },
 });

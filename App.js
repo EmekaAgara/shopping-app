@@ -35,53 +35,53 @@ export default function App() {
       <NavigationContainer>
         <SafeAreaProvider>
           <Stack.Navigator>
-            {/* <Stack.Screen
-            name='SplashScreen'
-            component={SplashScreen}
-            options={{
-            headerShown:false,
-            }}
-          />
+            <Stack.Screen
+              name="SplashScreen"
+              component={SplashScreen}
+              options={{
+                headerShown: false,
+              }}
+            />
 
-          <Stack.Screen
-            name='SplashScreen1'
-            component={SplashScreen1}
-            options={{
-            headerShown:false,
-            }}
-          />
+            <Stack.Screen
+              name="SplashScreen1"
+              component={SplashScreen1}
+              options={{
+                headerShown: false,
+              }}
+            />
 
-          <Stack.Screen
-            name='SplashScreen2'
-            component={SplashScreen2}
-            options={{
-            headerShown:false,
-            }}
-          />
+            <Stack.Screen
+              name="SplashScreen2"
+              component={SplashScreen2}
+              options={{
+                headerShown: false,
+              }}
+            />
 
-          <Stack.Screen
-            name='SplashScreen3'
-            component={SplashScreen3}
-            options={{
-            headerShown:false,
-            }}
-          />
+            <Stack.Screen
+              name="SplashScreen3"
+              component={SplashScreen3}
+              options={{
+                headerShown: false,
+              }}
+            />
 
-          <Stack.Screen
-            name='SplashScreen4'
-            component={SplashScreen4}
-            options={{
-            headerShown:false,
-            }}
-          /> */}
+            <Stack.Screen
+              name="SplashScreen4"
+              component={SplashScreen4}
+              options={{
+                headerShown: false,
+              }}
+            />
 
-            {/* <Stack.Screen
+            <Stack.Screen
               name="Welcome"
               component={Welcome}
               options={{
                 headerShown: false,
               }}
-            /> */}
+            />
 
             <Stack.Screen
               name="Login"

@@ -15,7 +15,8 @@ import { cartSlice } from "../store/cartSlice";
 import { useGetProductQuery, useGetRecProductQuery } from "../store/apiSlice";
 import { useNavigation, useRoute } from "@react-navigation/native";
 
-const ProductDetails = () => {
+const ProductDetails = ({ route }) => {
+  const id = route.params.id;
   const { data, isLoading, error } = useGetProductQuery(id);
   const dispatch = useDispatch();
   const { width } = useWindowDimensions(id);

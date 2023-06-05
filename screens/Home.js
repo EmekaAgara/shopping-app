@@ -125,10 +125,10 @@ const styles = StyleSheet.create({
   cardImage: {
     // padding: 55,
     // margin: 20,
-    // paddingBottom: 30,
+    marginLeft: 3,
     marginTop: 1,
     height: 120,
-    width: 110,
+    width: 105,
     resizeMode: "contain",
     alignSelf: "flex-start",
     position: "absolute",
